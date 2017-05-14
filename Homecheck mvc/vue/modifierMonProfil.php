@@ -1,26 +1,12 @@
-
-<!DOCTYPE html>
-<html>
-
 <?php
+require "commun.php";
+ 
 
-// Sous xAMP (Windows)
+ $entete= entete(2);
 
-$bdd = new PDO('mysql:host=localhost;dbname=homecheck;charset=utf8', 'root', '');
-
-?> 
-
-<head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="SITE2.css" />
-        <title>HomeCheck</title>
-    </head>
-
-    <body>
-
-        <?php include 'header.php'; ?>
-       
-        <div>
+    ob_start();
+    ?>
+           <div>
           <div class="box7">
             
             <div method="post" action="MonProfil.php">
@@ -87,6 +73,16 @@ $bdd = new PDO('mysql:host=localhost;dbname=homecheck;charset=utf8', 'root', '')
     
      </div>
 
-         <?php include 'footer.php'; ?>
-    </body>
-</html>
+        
+    <?php
+    $contenu = ob_get_clean();
+
+   
+    
+    
+
+    include 'gabarit.php';
+?>
+
+
+

@@ -1,22 +1,20 @@
 
+<?php
+require "commun.php";
+ 
 
-<html>
-    <head>
-        <!-- En-tête de la page -->
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="POPUP.css" />
-        <script type="text/javascript" src="menu.js"></script>
-        <title>Pop up capteur</title>
-    </head>
-    <body>   
+ $entete= entete(2);
 
-<div id="carre"> 
+    ob_start();
+    ?>
+  
+     <div id="carre"> 
        
   <h2> Capteur de Température :</h2>
-  <a href="#" class="On">On</a>
-  <a href="#" class="Off">Off</a>
+  <a href="#" class="Ont">On</a>
+  <a href="#" class="Offt">Off</a>
   <img class="capteurt" src="image/thermo.png" alt="Capteur de Temperature" />  
-  <a href="capteursParPiece.php"> <img class="croix" src="image/croix2.png" alt="fermeture" /> </a>
+  <a href="capteursParPiece.php"> <img class="croixt" src="image/croix2.png" alt="fermeture" /> </a>
   <a href="pagecapteurh.php"> <img class="flechedt" src="image/fleched.png" alt="fermeture" /> </a>
   <a href="pagecapteurf.php"> <img class="flechegt" src="image/flecheg.png" alt="fermeture" /> </a>
   <img class="graphet" src="image/graphetemp.jpg" alt="Graphique de temperature" />  
@@ -46,8 +44,15 @@
         
          </div>
 
+        
+    <?php
+    $contenu = ob_get_clean();
+
+   
+    
+    
+
+    include 'gabarit.php';
+?>
 
 
-    </body>
-
-</html>

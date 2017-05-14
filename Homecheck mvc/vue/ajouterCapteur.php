@@ -1,19 +1,17 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="POPUP.css" />
-        <script type="text/javascript" src="menu.js"></script>
-        <title>HomeCheck</title>
-    </head>
-     <body>
+<?php
+require "commun.php";
+ 
 
-            
-<div class="carrec"> 
+ $entete= entete(2);
 
-            <a href="capteursParPiece.php"> <img class="croix2" src="image/croix2.png" alt="fermeture" /> </a>
+    ob_start();
+    ?>
+         
+      <div class="carrec"> 
+
+           
         <div class="formulaire">
-
+ <a href="capteursParPiece.php"> <img class="croix2" src="image/croix2.png" alt="fermeture" /> </a>
             
             <span class=ajouttitre> Ajouter un capteur </span>
                 <br/><br/><br/>
@@ -21,7 +19,7 @@
 
         
         <div class="formulaire2">
-                <div class="capteur">
+                <div class="typecapteur">
                         <form method="post" action="traitement.php">
                          <p>
                           <label for="pays">Choisissez un type de capteur <br/> <br/></label>
@@ -56,7 +54,15 @@
         </div>
 
     </div>
+            
+        
+    <?php
+    $contenu = ob_get_clean();
 
-    </body>
-</html>
+   
+    
+    
+
+    include 'gabarit.php';
+?>
 

@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="SITE2.css" />
-        <title>HomeCheck page d'accueil</title>
-    </head>
-    
-    <body>
-      
-         <?php include 'header.php'; ?>
-    <div class="box8"> 
+<?php
+require "commun.php";
+ 
+
+ $entete= entete(2);
+
+    ob_start();
+    ?>
+        
+          <div class="box8"> 
 
             <div class="plan_automatisation">
             
@@ -87,9 +85,17 @@
     </div>  <!-- div info8 !-->
         
     </div>
-       	  
-        <?php include 'footer.php'; ?> 
-       
-    </body>
+          
+      
+            
+        
+    <?php
+    $contenu = ob_get_clean();
+
+   
     
-</html>
+    
+
+    include 'gabarit.php';
+?>
+

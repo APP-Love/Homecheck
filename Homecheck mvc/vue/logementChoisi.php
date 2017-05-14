@@ -1,16 +1,15 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="SITE.css" />
-        <title>HomeCheck</title>
-    </head>
 
-    <body>
+<?php
+require "commun.php";
+ 
 
-      <?php include 'header.php'; ?>
-        
-        <section class="logementchoisi">
+ $entete= entete(2);
+
+    ob_start();
+    ?>
+         
+       
+             <section class="logementchoisi">
 
          <div class="carre" >
             
@@ -29,11 +28,18 @@
              
          </div>
 
-         </section>
-          
-         <?php include 'footer.php'; ?>
+         </section> 
+        
+    <?php
+    $contenu = ob_get_clean();
 
-    
-    </body>
    
-</html>
+    
+    
+
+    include 'gabarit.php';
+?>
+
+
+
+

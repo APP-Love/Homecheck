@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="SITE.css" />
-        <title>HomeCheck</title>
-    </head>
+  <?php
+require "commun.php";
+ 
 
-    <body>
+ $entete= entete(2);
 
-        <?php include 'header.php'; ?>
-
+    ob_start();
+    ?>
+         
+         
         <Section>
             <div id="box"> 
                     <div class="automatisation"> Les automatisations </div>
@@ -136,11 +134,15 @@
 
             </div>
         </Section>
+            
+        
+    <?php
+    $contenu = ob_get_clean();
 
+   
+    
+    
 
-         <?php include 'footer.php'; ?>
+    include 'gabarit.php';
+?>
 
-     </body>
-     
-     
-</html>

@@ -1,15 +1,14 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="SITE2.css" />
-        <title>HomeCheck</title>
-    </head>
-    
-    <body>
 
-            <?php include 'header.php'; ?>
-  
+<?php
+require "commun.php";
+ 
+
+ $entete= entete(2);
+
+    ob_start();
+    ?>
+         
+         
        <section>
       
         <div class="les2">
@@ -52,10 +51,16 @@
   
         </div>
         </section>
+      
+            
+        
+    <?php
+    $contenu = ob_get_clean();
 
-            <?php include 'footer.php'; ?>
-       
-    </body>
-  
+   
     
-</html>
+    
+
+    include 'gabarit.php';
+?>
+

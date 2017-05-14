@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="SITE2.css" />
-        <title>HomeCheck</title>
-    </head>
+<?php
+require "commun.php";
+ 
 
-    <body>
+ $entete= entete(2);
 
-        <?php include 'header.php'; ?>
-        <div>       
+    ob_start();
+    ?>
+      
+          <div>       
             <p class="title"> Contactez-nous : </p>
         <div class="box10">
             <form method="post" action="traitement.php" class="contact">   
@@ -45,6 +43,17 @@
             </div>
         </div>
         </div>
-        <?php include 'footer.php'; ?>
-    </body>
-</html>
+      
+            
+        
+    <?php
+    $contenu = ob_get_clean();
+
+   
+    
+    
+
+    include 'gabarit.php';
+?>
+
+

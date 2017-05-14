@@ -1,24 +1,15 @@
-<!DOCTYPE html>
-<html>
+
 
 <?php
+require "commun.php";
+ 
 
-// Sous xAMP (Windows)
+ $entete= entete(1);
 
-$bdd = new PDO('mysql:host=localhost;dbname=bdd;charset=utf8', 'root', '');
-
-?> 
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="SITE2.css" />
-        <title>HomeCheck</title>
-    </head>
-
-    <body class="acceuil">
-
-       <?php include'headerbienvenue.php'; ?>
-  
-    <section>  
+    ob_start();
+    ?>
+        
+         <section>  
         
         <div class="bienvenue">
                 <img src="image/maison.jpg" alt="Image de Bienvenue"/>
@@ -83,6 +74,22 @@ $bdd = new PDO('mysql:host=localhost;dbname=bdd;charset=utf8', 'root', '');
         </div>
       
         </section>
-            <?php include'footer.php'; ?>
-      </body>
-</html>
+      
+            
+        
+    <?php
+    $contenu = ob_get_clean();
+
+   
+    
+    
+
+    include 'gabarit.php';
+?>
+
+
+
+
+
+
+
