@@ -38,7 +38,7 @@ include 'modele/connexion_bdd.php';
         	$edit=edit('date de naissance',$_POST['newnaissance']);
 
         }
-         if (isset($_POST['newadresse']) && !empty($_POST['newadressse'])){
+         if (isset($_POST['newadresse']) && !empty($_POST['newadresse'])){
              $_SESSION['adresse']= $_POST['newadresse'];
         	$edit=edit('adresse',$_POST['newadresse']);
         }
