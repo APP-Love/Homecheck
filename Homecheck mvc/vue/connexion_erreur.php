@@ -1,8 +1,11 @@
 
 
        <?php
-require "commun.php"
+include "commun.php";
+    
+
     $entete = entete(1);
+
     ob_start();
     ?>
         <fieldset>

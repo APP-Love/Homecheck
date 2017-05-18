@@ -9,7 +9,7 @@ require "commun.php";
     ob_start();
     ?>
         
-         <section>  
+         <section class="accueil">  
         
         <div class="bienvenue">
                 <img src="image/maison.jpg" alt="Image de Bienvenue"/>

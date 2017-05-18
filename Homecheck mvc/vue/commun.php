@@ -25,7 +25,7 @@ function entete( $page ){
                         <form class="inscription" method="post" action="index.php?cible=verif" >
                             <label for=" pseudo" > Votre pseudo : </label> 
                             
-                            <input type="text" name="Pseudo" id="Pseudo" placeholder="Pseudo ou mail..."  />
+                            <input type="text" name="identifiant" id="identifiant" placeholder="Pseudo ou mail..."  />
 
 
                             <label for="mdp"> Votre mot de passe : </label>

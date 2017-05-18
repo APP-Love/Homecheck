@@ -16,51 +16,51 @@ require "commun.php";
                 </p>
 
             </div>
-            <form method="post" action="index.php?cible=monprofil">
+            <form method="post" action="index.php?cible=edit">
                 <p class="modif">
                 <table class="modifier">
                     <tr>
                         <td class="td3"><label for="nom">Nom </label></td>
-                        <td class="td3"><input type="text" name="nom" id="nom"/></td>
+                        <td class="td3"><input type="text" name="newnom" id="newnom"/></td>
                     </tr>
                     <tr>
 
                         <td class="td3"><label for="prenom">Prénom </label></td>
-                        <td class="td3"><input type="text" name="prenom" id="prenom"/></td>
+                        <td class="td3"><input type="text" name="newprenom" id="newprenom"/></td>
                     </tr>
                     <tr>
                 
                         <td class="td3"><label for="date">Date de naissance </label></td>
-                        <td class="td3"><input type="tel" name="date" id="date"/></td>
+                        <td class="td3"><input type="tel" name="newdate" id="date"/></td>
                     </tr>
                     <tr>
                         <td class="td3"><label for="tel">Téléphone </label></td>
-                        <td class="td3"><input type="tel" name="tel" id="tel"/></td>
+                        <td class="td3"><input type="tel" name="newtel" id="tel"/></td>
                     </tr>
                    
                     <tr>
                         <td class="td3"><label for="Email">Email </label></td>
-                        <td class="td3"><input type="email" name="email" id="email"/></td>
+                        <td class="td3"><input type="email" name="newemail" id="email"/></td>
                     </tr>
                   
                     <tr>
                         <td class="td3"><label for="adresse">Numéro de rue </label></td>
-                        <td class="td3"><input type="text" name="numeroDeRue" id="NumeroDeRue"/></td>
+                        <td class="td3"><input type="text" name="newnumeroDeRue" id="NumeroDeRue"/></td>
                     </tr>
                    
                     <tr>
                         <td class="td3"><label for="complement"> Adresse </label></td>
-                        <td class="td3"><input type="text" name="adresse" id="adresse"/></td>
+                        <td class="td3"><input type="text" name="newadresse" id="adresse"/></td>
                     </tr>
                    
                     <tr>
                         <td class="td3"><label for="code_postal"> Code postal </label></td>
-                        <td class="td3"><input type="tel" name="code" id="code"/></td>
+                        <td class="td3"><input type="tel" name="newcode" id="code"/></td>
                     </tr>
                   
                     <tr>
                         <td class="td3"><label for="ville">Ville </label></td>
-                        <td class="td3"><input type="texte" name="ville" id="ville"/></td>
+                        <td class="td3"><input type="texte" name="newville" id="ville"/></td>
                     </tr>
                  </table>
                     <br/>

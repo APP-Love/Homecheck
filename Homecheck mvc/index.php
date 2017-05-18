@@ -1,11 +1,11 @@
 <?php 
-    session_start();
-   /* require("modele/inscription.php");*/
-    
+   session_start();
    
-    if(!isset($_SESSION["userID"])){ // L'utilisateur n'est pas connectÃ©
-     /* include  ("controleur/inscription.php");*/}/// On utilise un controleur secondaire pour eviter d'avoir un fichier index.php trop gros
-     else { // L'utilisateur est connectÃ©
+    if(!isset($_SESSION["identifiant"]) && !isset($_SESSION["mdp"])){ 
+    // L'utilisateur n'est pas connectÃ©
+     include  ("controleur/inscription.php");
+                                                        }/// On utilise un controleur secondaire pour eviter d'avoir un fichier index.php trop gros
+     else {          // L'utilisateur est connectÃ©
         if(isset($_GET['cible'])) { // on regarde la page on le veut aller 
             
             if($_GET['cible'] == 'accueilco'){
@@ -18,14 +18,19 @@
             } else if ($_GET['cible'] == "editprofil"){
                 include("Vue/modifierMonProfil.php");
 
+            } 
+             else if ($_GET['cible'] == "edit"){
+                include("controleur/edit_profil.php");
+
             } else if ($_GET['cible'] == "meslogements"){
                 include("vue/Meslogements.php");
 
            } 
-else if ($_GET['cible'] == "logementchoisi"){
+          else if ($_GET['cible'] == "logementchoisi"){
                 include("vue/logementChoisi.php");
 
-           }else if ($_GET['cible'] == "capteursparpiece"){
+           }
+           else if ($_GET['cible'] == "capteursparpiece"){
                 include("vue/capteursParPiece.php");
 
            }else if ($_GET['cible'] == "automatisations"){
@@ -66,3 +71,5 @@ else if ($_GET['cible'] == "logementchoisi"){
                 include("vue/AProposDeHomecheck.php");
         }
     }
+
+  ?> 

@@ -18,19 +18,18 @@ require "commun.php";
                 
                 <?php
 
-  $reponse = $bdd->query('SELECT * FROM utilisateur WHERE id=1');
-$donnees = $reponse->fetch();
+ 
 ?>
-            
+            <?php echo $_SESSION['id'] ; ?>
              <ul class="info">
-                     <p>  <?php echo $donnees['prenom'] ." ". $donnees['nom'] ; ?> <br/> <br/>
-                     Né le <?php echo $donnees['date de naissance'] ; ?>  <br/><br/>
-                     <?php echo $donnees['telephone'] ; ?>  <br/><br/>
-                     <?php echo $donnees['mail'] ; ?>  <br/><br/>
+                     <p>  <?php echo $_SESSION['prenom'] ." ". $_SESSION['nom'] ; ?> <br/> <br/>
+                     Né le <?php echo $_SESSION['date_de_naissance'] ; ?>  <br/><br/>
+                     <?php echo $_SESSION['tel'] ; ?>  <br/><br/>
+                     <?php echo $_SESSION['mail'] ; ?>  <br/><br/>
                      
 
-                     <p> <?php echo $donnees['adresse'] ; ?> <br/><br/>
-                     <?php echo $donnees['code postal'] ." ". $donnees['ville'] ; ?> <br/><br/>
+                     <p> <?php echo $_SESSION['adresse'] ; ?> <br/><br/>
+                     <?php echo $_SESSION['code_postal'] ." ". $_SESSION['ville'] ; ?> <br/><br/>
                     </p>
             </ul>
         </div>
