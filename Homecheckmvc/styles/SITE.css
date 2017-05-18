@@ -1,0 +1,581 @@
+
+/*******************************************
+           HEADER
+******************************************/
+
+
+
+body {
+	margin:0;
+	padding:0;
+
+}
+
+.rectangle1{
+	background: cornsilk;
+	width: 100%;	
+
+}
+
+.rectangle2{
+
+	display: flex;
+	justify-content: space-between;
+	justify-content: space-around;
+}
+
+.logo{
+	
+	margin-top: 15px;
+}
+
+
+.Homecheck{
+
+	font-size:70px;
+	margin-left: 30px;
+	margin-top: -1px;
+}
+
+.Yourhouse{
+		font-size: 32px;
+		font-style: italic;
+		margin-left: 160px;	
+		margin-top: -60px;
+			
+	}
+
+#Admin{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+	margin-left: 256px;
+}
+#inscription{
+  display: flex;
+    justify-content: space-between;
+    margin-top: 130px;
+   margin-left : 75px;
+}
+.PhotoAdmin {
+
+	border-radius:40px;  
+ 	overflow:hidden;
+	width: 40px;
+    height:40px;
+    position :relative;
+    right : 15px;
+    top : -8px;
+   
+}
+.barre{
+	padding-left: 20px;
+	padding-right: 10px;
+	border : 1px solid black;
+	color : white;
+	background-color: black;
+	height: 20px;
+
+}
+.deco{
+
+	padding-left: 10px;
+}
+
+.langues{
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+}
+.francais {
+	padding-bottom: 10px;
+}
+
+.rectangle3{
+	display: flex;
+
+
+}
+.menu{
+  width: 100%;
+  
+}
+
+.td2 {
+    float: left;
+    font-family: lucida;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+.tr2{
+  list-style-type: none;
+   overflow: hidden;
+    background-color: black; 
+  
+}
+
+a{
+    text-decoration: none;
+
+}
+.td2:hover, .td2:focus{
+    transition: padding .3s, background .3s;
+    background-color: burlywood;
+    
+}
+
+.recherche{
+    position: absolute;
+    margin-left: 1130px;
+    margin-top: -50px;
+}
+
+
+
+/* responsive */
+
+@media screen and (max-width: 1280px)
+
+{
+
+.PhotoAdmin{
+	display: none;
+}
+.langues{
+	display: none;
+}
+.recherche{
+	display: none;
+}
+
+.rectangle2{
+	justify-content: center;
+
+}
+.logo{
+	width: auto;
+	padding-right: 40px;
+
+}
+#Admin{
+	margin-left: 100px;
+}
+#inscription{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  margin-left: 0;
+   margin-bottom: 20px;
+}
+
+.Homecheck{
+	font-size: 50px;
+	text-align :center;
+
+}
+	
+.Yourhouse{  
+	font-size: 25px;
+	font-style: italic;
+	padding-top: 15px;
+	margin-left: 28px;
+}
+
+.menu {
+	width: 100%;
+}
+.tr2{
+	display: flex;
+	flex-direction: column;
+}
+.barre{
+	width: auto;
+}
+
+.nom{
+	display: none;
+}
+}
+/* telephone*/
+
+@media screen and (max-width: 940px)           
+{                                     
+
+.Homecheck{
+	font-size: 35px;
+	text-align :center;
+}
+	
+.Yourhouse{  
+	font-size: 15px;
+	font-style: italic;
+	padding-top: 25px;
+	margin-left: 39px;
+} 
+
+.rectangle2{
+	justify-content: center;
+
+}
+.logo{
+	width: auto;
+	padding-right: 1px;
+
+}
+#inscription{
+  display: flex;
+  justify-content: flex-start;
+     margin-bottom: 20px;
+
+}
+
+} 
+
+/******************************************
+			FIN HEADER 
+*****************************************/
+
+
+/***************************************
+			FOOTER
+***************************************/
+footer
+	{
+		color : black;
+		text-align: center;
+		font-style: italic;
+		background-color: rgb(150,150,150);
+		bottom: 0;
+		left: 50%;
+		margin-top: 30px;
+	}
+
+
+/**************************************
+		FIN FOOTER
+*************************************/
+
+/*************************************
+	A PROPOS DE HOMECHECK
+**************************************/
+
+/* section */
+body{
+	padding: 0;
+	margin :0;
+}
+
+.bienvenue
+	{
+		
+		width:100%;
+		
+		
+	}
+
+.contact1
+	{
+		
+		text-align: center;
+		font-size : 50px;
+		color: black;
+
+	}
+
+.contact a {
+	text-decoration : none;
+}
+
+
+@media screen and (max-width: 940px)           
+{  
+
+.bienvenue{
+	width: 100%;
+    height: auto;
+}
+
+}
+
+/*************************************
+	FIN A PROPOS DE HOMECHECK
+**************************************/
+/******************************
+		LOGEMENT CHOISI
+********************************/
+
+.logementchoisi{
+	display: flex;
+	justify-content: center;
+}
+
+.carre{
+
+	display: flex;
+	justify-content: space-between;
+	justify-content: space-around;
+	padding-top: 10px;
+	margin-top: 50px;
+    border: 1px solid black;
+    border-width: 5px;
+    width: 80%;
+    height: 290px;
+    top: 250px;
+    left : 10%;
+    right : 10%;
+
+}
+
+.liste{
+
+	font-size: 18px;
+  
+ 
+}
+
+.plan{
+	padding-top: 30px;
+   
+}
+.admin{
+	
+	display: flex;
+	margin-top: 230px;
+    border : 2px solid black;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background : #FEBA86;
+
+}
+.texte{
+
+	margin: auto;
+    font-family: 'Arial Black';
+
+
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 1280px)
+
+{
+
+.logementchoisi{
+	display: flex;
+	justify-content: center;
+	
+}
+
+.carre{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80%;
+    height: 50%;
+}
+
+.admin{
+	margin-top: 40px;
+	margin-bottom: 10px;
+	
+}
+
+	
+}
+/*******************************
+	FIN LOGEMENT CHOISI
+********************************/
+
+/*********************************
+		AUTOMATISATION
+******************************/
+
+
+.box{
+	display: flex ;
+
+}
+
+.automatisationtitre{
+text-align: center;
+	font-size : 40px;
+	font-style: bold;
+	padding-left: 16px;
+	padding-top: 14px;
+}
+
+.box1{
+	display: flex;
+	border : 3px solid black;
+	display: flex;
+	flex-direction: column;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 20px;
+	padding-bottom: 30px;
+	height: 300px;
+}
+
+.Ajout{
+	display: flex;
+	justify-content: center;
+	font-size : 25px;
+	
+}
+
+
+.intitulé{ 
+	
+	font-size : 20px;
+	text-decoration: underline black;
+ }
+
+.box2{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 20px;
+
+}
+.box3{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 20px;
+	
+}
+
+.croix1{
+	padding-left: 30px;
+}
+
+
+.table2 
+
+{
+
+    border-collapse: collapse;
+
+}
+
+.td3
+
+{
+    border: 1px solid black;
+
+}
+ 
+.box4{
+	display: flex;
+	justify-content: center;
+	justify-content: space-between;
+	border : 3px solid black;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 40px;
+}
+
+.A1{
+	padding-top: 5px;
+	padding-left: 10px;
+}
+
+
+.box5{
+	padding-right: 20px;
+	padding-top: 20px;
+}
+
+.enre{
+	border : 1px solid black;
+	text-align: center;
+	width: 10%;
+	background-color: burlywood;
+	float : right;
+
+}
+
+/********************************
+	FIN AUTOMATISATION
+********************************/
+
+
+/*********************************
+		MON PROFIL
+*******************************/
+
+.boxprofil{
+
+	display: flex;
+	margin-left: 40px;
+	margin-right: 40px;
+	border : 2px solid black;
+	margin-top: 40px;
+}
+
+.boxphoto {
+	display: flex;
+	flex-direction: column;
+	margin-left :60px;
+	margin-top: 15px;
+}
+.modifierProfil
+{
+	border: black 1px solid;
+	text-align: center;
+	
+	padding: 1%;
+	padding-left: 20%;
+	padding-right: 20%;
+
+	margin-top : 5px;
+
+}
+
+a{
+	text-decoration: none;
+}
+
+
+.modifierProfil:hover, .modifierProfil:focus
+{
+	
+	transition: padding .3s, background .3s;
+	background-color: burlywood;
+
+}
+
+
+.info
+{
+	margin: auto;
+	text-align: center;
+	width: 30%;
+
+}
+
+
+
+@media screen and (max-width: 480px)
+
+{
+
+.photoprofil{
+	width: 100%;
+	height: auto;
+
+}
+
+
+/*******************************
+	FIN MON PROFIL
+********************************/
+
