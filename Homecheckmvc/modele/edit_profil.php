@@ -8,7 +8,7 @@ function edit($attribut,$value){
 	$new= "'" . $new . "'";
 	$query = ' UPDATE utilisateur 
 			SET ' . $attribut . ' = ' . $new . 
-			' WHERE id = 1 ';
+			' WHERE id = '.$_SESSION['id']. '';
 
 
 	$donnees = $bdd->prepare($query);

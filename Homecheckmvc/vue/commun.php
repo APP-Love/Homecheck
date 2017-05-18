@@ -63,7 +63,7 @@ function entete( $page ){
                     </div>
                     <div id="Admin">
                         <div><img class="PhotoAdmin" src="image/Msublime.jpg" alt="PhotoAdmin" /></div>
-                        <div class="barre" >  Jérémie <span class="nom"> SUBLIME </span></div>
+                        <div class="barre" > <?php echo $_SESSION['prenom'] ?> <span class="nom"> <?php echo $_SESSION['nom'] ?> </span></div>
                         <a href="index.php?cible=deco" ><img class="deco" src="image/deconnexion.png" type="Déconnexion" alt="Deconnexion"></a>
                     </div>
                     <div class="langues">
