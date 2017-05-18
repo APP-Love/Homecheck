@@ -7,7 +7,7 @@
 
 
 
-if($_GET['cible']=="verif"){                                   // L'utilisateur vient de valider le formulaire de connexion
+if(isset($_GET['cible']) && $_GET['cible']=="verif"){                                   // L'utilisateur vient de valider le formulaire de connexion
     if(!empty($_POST['identifiant']) && (!empty($_POST['mdp']))){ // L'utilisateur a rempli tous les champs du formulaire
         
         $reponse = $bdd->query('SELECT * FROM utilisateur WHERE mdp="'.$_POST['mdp'].'"');
@@ -19,7 +19,7 @@ if($_GET['cible']=="verif"){                                   // L'utilisateur 
                 $_SESSION['id']=$max_row['id'];
 
 
- $_SESSION['nom']=$max_row['nom'];
+                 $_SESSION['nom']=$max_row['nom'];
                $_SESSION['prenom']=$max_row['prenom'];
                 $_SESSION['date_de_naissance']=$max_row['date de naissance'];
 

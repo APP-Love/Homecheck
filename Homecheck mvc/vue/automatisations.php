@@ -10,7 +10,7 @@ require "commun.php";
          
         <Section>
             <div id="box"> 
-                    <div class="automatisation"> Les automatisations </div>
+                    <div class="automatisationtitre"> Les automatisations </div>
                 <div class="box1">
                     
                         <div class="Ajout" > Ajout d'automatisation : </div> 

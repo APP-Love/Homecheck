@@ -1,7 +1,7 @@
 <?php 
    session_start();
    
-    if(!isset($_SESSION["identifiant"]) && !isset($_SESSION["mdp"])){ 
+    if( !isset($_SESSION["identifiant"]) && !isset($_SESSION["mdp"])){ 
     // L'utilisateur n'est pas connectÃ©
      include  ("controleur/inscription.php");
                                                         }/// On utilise un controleur secondaire pour eviter d'avoir un fichier index.php trop gros
