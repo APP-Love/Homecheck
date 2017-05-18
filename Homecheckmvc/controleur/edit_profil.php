@@ -29,6 +29,7 @@ include 'modele/connexion_bdd.php';
                 $edit=edit('prenom',$_POST['newprenom']);}
                 
 
+         if (isset($_POST['newemail'])  && !empty($_POST['newemail'])){
              $_SESSION['mail']= $_POST['newemail'];
         	$edit=edit('mail',$_POST['newemail']);
                 }
