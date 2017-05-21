@@ -16,7 +16,13 @@
 
 
             } else if ($_GET['cible'] == "editprofil"){
-                include("Vue/modifierMonProfil.php");
+                include("vue/modifierMonProfil.php");
+
+            } 
+
+             else if ($_GET['cible'] == "gestionadmin"){
+               echo "hhhh";
+                include("vue/gestionadmin.php");
 
             } 
              else if ($_GET['cible'] == "edit"){

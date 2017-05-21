@@ -269,13 +269,7 @@ body{
 	margin :0;
 }
 
-.bienvenue
-	{
-		
-		width:100%;
-		
-		
-	}
+
 
 .contact1
 	{
@@ -294,8 +288,9 @@ body{
 @media screen and (max-width: 940px)           
 {  
 
-.bienvenue{
-	width: 100%;
+
+.bienvenue {
+	max-width:100% ;
     height: auto;
 }
 
@@ -501,7 +496,7 @@ text-align: center;
 	background-color: burlywood;
 	float : right;
 
-}
+} 
 
 /********************************
 	FIN AUTOMATISATION

@@ -18,14 +18,16 @@ require "commun.php";
         <h1 class="img">Bienvenue sur HomeCheck</h1>
 
         <p class="textec">
-            HomeCheck est une société de domotique qui peut vous faciliter la vie. Notre société prône le confort de ses clients en permettant la personnalisation de votre habitation que ce soit un appartement ou une maison Homecheck sera toujours présent.
+            HomeCheck est une société de domotique qui peut vous faciliter la vie. Notre société prône le confort de ses clients en permettant la personnalisation de votre habitation que ce soit un appartement ou une maison Homecheck sera toujours présent. Même si vous êtes à l'exterieur vous vous sentirez comme chez vous. Et ce, depuis un ordinateur ou une tablette de façon simple et intuitive afin que chacun puisse améliorer son mode de vie en terme de confort et sécurité en connectant sa maison. 
         </p>
+
         
         <p class="textec">
             Grâce à HomeCheck, vous avez accès à votre habitation où que vous soyez dans le monde. En effet, notre plateforme est accessible dans tous les pays du monde grâce à une connection internet suffisante. HomeCheck à une dimension internationale, notre plateforme est configurable en Anglais et en Français.
         </p>
         
-        <p class="textec"> Blabla à continuer je suis à court d'idées et d'inspiration</p>
+        <p class="textec"> Si vous êtes interessés par nos service et que vous voulez vous inscrire, veuillez nous contactez, soit par le petit formulaire ci-dessous ou par téléphone. </p>
+        
 
 
 
