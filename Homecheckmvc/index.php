@@ -4,6 +4,10 @@
     if( !isset($_SESSION["identifiant"]) && !isset($_SESSION["mdp"])){ 
     // L'utilisateur n'est pas connectÃ©
      include  ("controleur/inscription.php");
+      if($_GET['cible'] && $_GET['cible'] =="NEWformulaire" ){
+                include("controleur/NEWformulaire.php");
+
+            }
                                                         }/// On utilise un controleur secondaire pour eviter d'avoir un fichier index.php trop gros
      else {          // L'utilisateur est connectÃ©
         if(isset($_GET['cible'])) { // on regarde la page on le veut aller 
@@ -60,6 +64,10 @@
                 include("vue/Contactez_nous.php");
 
            }
+           else  if($_GET['cible'] == 'formulaire'){
+                include("controleur/traitement.php");
+
+            }
 
 
 

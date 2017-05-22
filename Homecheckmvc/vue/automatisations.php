@@ -89,33 +89,15 @@ require "commun.php";
                 </div>
 
                 
-              <div class="box4">
-                    <div class="A1"> 
-
-                    <table class="auto2" style="width:100%"> 
-  <tr>
-    <th class="auto1">Action</th>
-    <th class="auto1">Piece(s)</th> 
-    <th class="auto1">Condition</th>
-    <th class="auto1">Recurrence</th>
-  </tr>
-  <tr>
-    <td class="auto1">Chauffage</td>
-    <td class="auto1">Cuisine, Chambre 1, Chambre 2</td> 
-    <td class="auto1">20°C, de 10h a 20h</td>
-    <td class="auto1">Lundi, Mardi </td>
-  </tr>
-  <tr>
-    <td class="auto1">Ouverture des volets</td>
-    <td class="auto1">Salon</td> 
-    <td class="auto1">10h</td>
-    <td class="auto1">Lundi, Mardi Mercredi Jeudi Vendredi</td>
-  </tr>
-</table> </div>
+                <div class="box4">
+                    <div class="A1"> A1 </div>
                     <div><a href="#"> <img class="croix1" src="image/croix.png" alt="supprimer automatisation" /></a></div>
                 </div>
 
-               
+                <div class="box4">
+                    <div class="A1"> A2 </div>
+                    <div > <a href="#"> <img class="croix1" src="image/croix.png" alt="supprimer automatisation" /></a></div>
+                </div>
 
 
             </div>
