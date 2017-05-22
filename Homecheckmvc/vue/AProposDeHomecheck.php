@@ -11,7 +11,7 @@ require "commun.php";
         <div class="bienvenue">
           <!--  <source srcset="image/maison.jpg"  >
              <source srcset="image/smallmaison.jpg" media="(max-width: 940px)">!-->
-             <img src="image/maison.jpg" alt="Image de Bienvenue"  /> 
+             <img src="image/maison.jpg" alt="Image de Bienvenue"/> 
         </div>
         
         <br/>

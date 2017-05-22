@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  127.0.0.1
--- Généré le :  Dim 14 Mai 2017 à 19:42
+-- Généré le :  Lun 22 Mai 2017 à 16:29
 -- Version du serveur :  10.1.21-MariaDB
 -- Version de PHP :  5.6.30
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `homecheck`
+-- Base de données :  `bdd`
 --
 
 -- --------------------------------------------------------
@@ -109,18 +109,20 @@ CREATE TABLE `utilisateur` (
   `date de naissance` date NOT NULL,
   `telephone` varchar(255) NOT NULL,
   `mail` varchar(255) NOT NULL,
+  `numero` int(11) NOT NULL,
   `adresse` varchar(255) NOT NULL,
   `code postal` int(255) NOT NULL,
   `ville` varchar(255) NOT NULL,
-  `type` int(255) NOT NULL
+  `type` int(255) NOT NULL,
+  `message` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Contenu de la table `utilisateur`
 --
 
-INSERT INTO `utilisateur` (`id`, `nom`, `prenom`, `identifiant`, `mdp`, `date de naissance`, `telephone`, `mail`, `adresse`, `code postal`, `ville`, `type`) VALUES
-(1, 'SUBLIME', 'Jeremie', 'jeremie.sublime@isep.fr', 'Motdepasse', '2017-05-11', '0000000000', 'jeremie.sublime@isep.fr', '10 rue de Vanves', 75011, 'PARIS', 1);
+INSERT INTO `utilisateur` (`id`, `nom`, `prenom`, `identifiant`, `mdp`, `date de naissance`, `telephone`, `mail`, `numero`, `adresse`, `code postal`, `ville`, `type`, `message`) VALUES
+(1, 'SUBLIME', 'jérémie', 'jeremie.sublime@isep.fr', 'Motdepasse', '2017-05-11', '0657485768', 'jeremie.sublime@isep.fr', 10, 'Abbé groult', 75011, 'paris', 1, 'jcsjqcb');
 
 -- --------------------------------------------------------
 

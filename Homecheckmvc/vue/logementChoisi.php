@@ -46,7 +46,7 @@ $reponse->closeCursor(); // Termine le traitement de la requête
 ?>
            
            
-            <a href="index.php?cible=gestionadmin" ><div class="admin"> <p class="texte"> Gestion des administrateurs </p></div></a>
+            <a href="gestionadmin.php" ><div class="admin"> <p class="texte"> Gestion des administrateurs </p></div></a>
              
          </div>
 

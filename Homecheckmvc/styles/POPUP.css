@@ -69,7 +69,7 @@ PAGE POP UP
     top : -0px;
 }
 
-.carre2{
+.carrec {
     margin : auto;
     margin-top: 80px;
     height: 400px;
@@ -783,7 +783,6 @@ html>body #menut li ul li
         border-top : 1px solid transparent; /* on met une bordure transparente en haut de chaque élément */
 
 }
-
 
 
 #menut li ul ul 

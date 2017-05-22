@@ -4,10 +4,6 @@
     if( !isset($_SESSION["identifiant"]) && !isset($_SESSION["mdp"])){ 
     // L'utilisateur n'est pas connectÃ©
      include  ("controleur/inscription.php");
-      if($_GET['cible'] && $_GET['cible'] =="NEWformulaire" ){
-                include("controleur/NEWformulaire.php");
-
-            }
                                                         }/// On utilise un controleur secondaire pour eviter d'avoir un fichier index.php trop gros
      else {          // L'utilisateur est connectÃ©
         if(isset($_GET['cible'])) { // on regarde la page on le veut aller 
@@ -20,13 +16,7 @@
 
 
             } else if ($_GET['cible'] == "editprofil"){
-                include("vue/modifierMonProfil.php");
-
-            } 
-
-             else if ($_GET['cible'] == "gestionadmin"){
-               echo "hhhh";
-                include("vue/gestionadmin.php");
+                include("Vue/modifierMonProfil.php");
 
             } 
              else if ($_GET['cible'] == "edit"){
@@ -48,6 +38,22 @@
 
            }
 
+           else if ($_GET['cible'] == "piece"){
+                include("controleur/automatisationPiece.php")
+           }
+
+           else if($_GET['cible'] == "action"){
+                include("controleur/automatisationAction.php")
+           }
+
+           else if($_GET['cible'] == "recurrence"){
+                include("controleur/automatisationRecurrence.php")
+           }
+
+           else if($_GET['cible'] == "retour"){
+                include("controleur/automatisationRetour.php")
+           }
+
            else if ($_GET['cible'] == "capteurt"){
                 include("Vue/pagecapteurt.php");
 
@@ -64,10 +70,6 @@
                 include("vue/Contactez_nous.php");
 
            }
-           else  if($_GET['cible'] == 'formulaire'){
-                include("controleur/traitement.php");
-
-            }
 
 
 

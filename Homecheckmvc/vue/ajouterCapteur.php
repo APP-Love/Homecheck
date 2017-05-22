@@ -7,7 +7,7 @@ require "commun.php";
     ob_start();
     ?>
          
-      <div class="carre2"> 
+      <div class="carrec"> 
 
            
         <div class="formulaire">
@@ -23,7 +23,7 @@ require "commun.php";
                         <form method="post" action="traitement.php">
                          <p>
                           <label for="pays">Choisissez un type de capteur <br/> <br/></label>
-                         <select name="capteur" id="capteur">
+                    <select name="capteur" id="capteur">
                          <option value="humidité">Capteur d'humidité</option>
                          <option value="lumiere">Capteur de lumière</option>
                           <option value="pression">Capteur de pression</option>

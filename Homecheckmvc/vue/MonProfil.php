@@ -20,7 +20,7 @@ require "commun.php";
 
  
 ?>
-            
+            <?php echo $_SESSION['id'] ; ?>
              <ul class="info">
                      <p>  <?php echo $_SESSION['prenom'] ." ". $_SESSION['nom'] ; ?> <br/> <br/>
                      Né le <?php echo $_SESSION['date_de_naissance'] ; ?>  <br/><br/>

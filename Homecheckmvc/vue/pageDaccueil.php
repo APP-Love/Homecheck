@@ -35,23 +35,23 @@ require "commun.php";
             <tr>
                 <td class="tdc">
                 
-                     <form method="post" action="index.php?cible=NEWformulaire">
+                     <form method="post" action="#.php">
                                 <br/>
                                 <img src="image/enveloppe.png" class="flottant" alt="image_enveloppe"/>
 
                                 <br/>
             
                                 <label for="Nom">Nom :</label>
-                                <input type="text" name="nom" id="nom" placeholder="Ex : SUBLIME" required  />
+                                <input type="text" name="nom" id="nom" placeholder="Ex : Jérémie" required  />
                                             <br/>
                                              <br/>
-                                <label for="Email"> Email :</label>
+                                <label for="Email">Email :</label>
                                 <input type="email" name="email" id="email" required />
                                              <br/>
                                              <br/>
 
-                                 <label for="telephone">Téléphone :</label>
-                                <input type="telephone" name="telephone" id="telephone" required/>
+                                 <label for="tel">Téléphone :</label>
+                                <input type="tel" name="tel" id="tel" required/>
                                                 <br/>
                                                  <br/>
                                                  
@@ -59,7 +59,7 @@ require "commun.php";
                                 <textarea name="message" id="message" rows="10" cols="50" required></textarea> 
                                                 <br/>
                                                 <br/>
-                                <input class="envoyer" type="submit"  id="envoyer" name='envoyer' value="Envoyer" />
+                                <input class="envoyer" type="submit" value="Envoyer" />
 
                     </form>
                 </td>

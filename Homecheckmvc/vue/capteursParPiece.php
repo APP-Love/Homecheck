@@ -56,22 +56,19 @@ $donnees = $reponse->fetch();
 
                     </div>
 
-                                       <div class="capteur">
-                                      
-                                            <?php
-                                              include 'controleur/ajout_capteur.php';
-                                            ?>
+                    <a href="index.php?cible=capteurt">
+                    <div class="capteur">
+                                <div class="capteur_img"> 
 
+                                      <img src="image/capteur.png" alt=" capteur" /> 
+                                </div> 
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                <div class="slider round">
+                                </div>
+                              </label>
                     </div>
-
-     
-
-                    
-
-
-
-
-
+                    </a>
 
                     <div class="bouton2">
 

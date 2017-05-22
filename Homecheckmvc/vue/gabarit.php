@@ -6,7 +6,6 @@
    <link rel="stylesheet" type="text/css" href="styles/POPUP.css" />
     <link rel="stylesheet" type="text/css" href="styles/SITE.css" />
     <link rel="stylesheet" type="text/css" href="styles/SITE2.css" />
-    <link rel="stylesheet" type="text/css" href="styles/gestionadmin.css" />
         <title>
             Homecheck
         </title>

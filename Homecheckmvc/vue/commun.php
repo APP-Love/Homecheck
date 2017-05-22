@@ -54,7 +54,7 @@ function entete( $page ){
        <div class="rectangle1">
                 <div class="rectangle2">
 
-                    <a href="index.php?cible=accueilco " ><img class="logo" src="image/logo.png" alt="logo" /></a>
+                    <a href="index.php?cible=pagedacceuil " ><img class="logo" src="image/logo.png" alt="logo" /></a>
                     <div class="texte1">
                         <ul>
                             <p class="Homecheck" > HomeCheck </p>
