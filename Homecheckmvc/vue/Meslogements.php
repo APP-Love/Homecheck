@@ -25,7 +25,9 @@ require "commun.php";
                 <p class="info2">
                         Maison 
                         <br/>
-                        Adresse (à prendre sur la base de donnée)
+                         <?php echo $_SESSION['adresse']." , "  
+                   . $_SESSION['code_postal'] ." ". $_SESSION['ville'] ; ?> 
+                
                 </p>
        
          </a>
@@ -42,7 +44,7 @@ require "commun.php";
                 <p class="info2">
                             Appartement
                             <br/>
-                            Adresse (à prendre sur la base de donnée)
+                           N'en possède pas 
                 </p>
             
             </a>
