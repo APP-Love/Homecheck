@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  127.0.0.1
--- Généré le :  Mar 23 Mai 2017 à 12:07
+-- Généré le :  Mar 23 Mai 2017 à 12:18
 -- Version du serveur :  10.1.21-MariaDB
 -- Version de PHP :  5.6.30
 
@@ -19,6 +19,37 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `bdd`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `automatisations`
+--
+
+CREATE TABLE `automatisations` (
+  `id` int(255) NOT NULL,
+  `action` int(255) NOT NULL,
+  `pieces` int(255) NOT NULL,
+  `recurrence` int(255) NOT NULL,
+  `heureDebut` time(6) NOT NULL,
+  `heureFin` time(6) NOT NULL,
+  `temperature` int(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `capteuractionneur`
+--
+
+CREATE TABLE `capteuractionneur` (
+  `numero de serie` varchar(255) NOT NULL,
+  `id_piece` int(255) NOT NULL,
+  `reference` varchar(255) NOT NULL,
+  `type` int(255) NOT NULL COMMENT '1: fumée',
+  `description` varchar(255) NOT NULL,
+  `etat` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 -- --------------------------------------------------------
 
@@ -56,6 +87,33 @@ CREATE TABLE `logement` (
 
 INSERT INTO `logement` (`id`, `type`, `adresse`, `code postal`, `ville`, `superficie`) VALUES
 (1, 2, '57 rue Sedaine', 75011, 'PARIS', 50);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `messagerie`
+--
+
+CREATE TABLE `messagerie` (
+  `id` int(11) NOT NULL,
+  `nom` varchar(200) NOT NULL,
+  `mail` varchar(255) NOT NULL,
+  `telephone` varchar(255) NOT NULL,
+  `message` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Contenu de la table `messagerie`
+--
+
+INSERT INTO `messagerie` (`id`, `nom`, `mail`, `telephone`, `message`) VALUES
+(2, 'iribarne', 'natho-metal@hotmail.fr', '00000000', 'test'),
+(3, 'iribarne', 'natho-metal@hotmail.fr', '00000000', 'test'),
+(4, 'manon', 'iribarne.manon@gmail.com', '000000000', 'helo'),
+(5, 'SUBLIME', 'iribarne.manon@gmail.com', '0758391321', 'luc'),
+(6, 'jjsnsx', 'manon@juniorisep.com', '0758391323', 'manon'),
+(7, 'rodin', 'loli@hksqd.com', '0758391320', 'try'),
+(8, 'tujkl', 'miribarne@juniorisep.com', '00000000', 'on essai');
 
 -- --------------------------------------------------------
 
@@ -126,6 +184,18 @@ CREATE TABLE `utilisateur_logement` (
 --
 
 --
+-- Index pour la table `automatisations`
+--
+ALTER TABLE `automatisations`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `capteuractionneur`
+--
+ALTER TABLE `capteuractionneur`
+  ADD PRIMARY KEY (`numero de serie`);
+
+--
 -- Index pour la table `information`
 --
 ALTER TABLE `information`
@@ -135,6 +205,12 @@ ALTER TABLE `information`
 -- Index pour la table `logement`
 --
 ALTER TABLE `logement`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `messagerie`
+--
+ALTER TABLE `messagerie`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -159,6 +235,16 @@ ALTER TABLE `utilisateur_logement`
 -- AUTO_INCREMENT pour les tables exportées
 --
 
+--
+-- AUTO_INCREMENT pour la table `automatisations`
+--
+ALTER TABLE `automatisations`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT pour la table `messagerie`
+--
+ALTER TABLE `messagerie`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT pour la table `utilisateur`
 --
