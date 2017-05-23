@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  127.0.0.1
--- Généré le :  Lun 22 Mai 2017 à 16:13
+-- Généré le :  Mar 23 Mai 2017 à 12:38
 -- Version du serveur :  10.1.21-MariaDB
--- Version de PHP :  5.6.30
+-- Version de PHP :  7.0.15
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -23,17 +23,45 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Structure de la table `capteur/actionneur`
+-- Structure de la table `automatisations`
 --
 
-CREATE TABLE `capteur/actionneur` (
+CREATE TABLE `automatisations` (
+  `id` int(255) NOT NULL,
+  `action` int(255) NOT NULL,
+  `pieces` int(255) NOT NULL,
+  `recurrence` int(255) NOT NULL,
+  `heureDebut` time(6) NOT NULL,
+  `heureFin` time(6) NOT NULL,
+  `temperature` int(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `capteuractionneur`
+--
+
+CREATE TABLE `capteuractionneur` (
   `numero de serie` varchar(255) NOT NULL,
-  `id-piece` int(255) NOT NULL,
+  `id_piece` int(255) NOT NULL,
   `reference` varchar(255) NOT NULL,
   `type` int(255) NOT NULL COMMENT '1: fumée',
   `description` varchar(255) NOT NULL,
   `etat` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+
+--
+-- Contenu de la table `capteuractionneur`
+--
+
+INSERT INTO `capteuractionneur` (`numero de serie`, `id_piece`, `reference`, `type`, `description`, `etat`) VALUES
+('1', 1, '001', 1, 'capteur température', 1),
+('2', 1, '002', 2, 'capteur humidité', 1),
+('1', 1, '001', 1, 'capteur température', 1),
+('2', 1, '002', 2, 'capteur humidité', 1),
+('3', 1, '003', 3, 'capteur fenêtre', 1),
+('3', 1, '003', 3, 'capteur fenêtre', 1);
 
 -- --------------------------------------------------------
 
@@ -136,7 +164,6 @@ CREATE TABLE `utilisateur` (
   `date de naissance` date NOT NULL,
   `telephone` varchar(255) NOT NULL,
   `mail` varchar(255) NOT NULL,
-  `numero` int(11) NOT NULL,
   `adresse` varchar(255) NOT NULL,
   `code postal` int(255) NOT NULL,
   `ville` varchar(255) NOT NULL,
@@ -148,81 +175,10 @@ CREATE TABLE `utilisateur` (
 -- Contenu de la table `utilisateur`
 --
 
-INSERT INTO `utilisateur` (`id`, `nom`, `prenom`, `identifiant`, `mdp`, `date de naissance`, `telephone`, `mail`, `numero`, `adresse`, `code postal`, `ville`, `type`, `message`) VALUES
-(1, 'SUBLIME', 'jérémie', 'jeremie.sublime@isep.fr', 'Motdepasse', '2017-05-11', '0657485768', 'jeremie.sublime@isep.fr', 10, 'Abbé groult', 75011, 'paris', 1, 'jcsjqcb');
+INSERT INTO `utilisateur` (`id`, `nom`, `prenom`, `identifiant`, `mdp`, `date de naissance`, `telephone`, `mail`, `adresse`, `code postal`, `ville`, `type`, `message`) VALUES
+(1, 'SUBLIME', 'Jeremie', 'jeremie.sublime@isep.fr', 'Motdepasse', '2017-05-11', '0656569696', 'jeremie.subime@isep.fr', '25 rue de vanves', 75015, 'Paris', 1, ''),
+(1, 'SUBLIME', 'Jeremie', 'jeremie.sublime@isep.fr', 'Motdepasse', '2017-05-11', '0656569696', 'jeremie.subime@isep.fr', '25 rue de vanves', 75015, 'Paris', 1, '');
 
--- --------------------------------------------------------
-
---
--- Structure de la table `utilisateur_logement`
---
-
-CREATE TABLE `utilisateur_logement` (
-  `id` int(255) NOT NULL,
-  `id-logement` int(255) NOT NULL,
-  `id-utilisateur` int(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Index pour les tables exportées
---
-
---
--- Index pour la table `capteur/actionneur`
---
-ALTER TABLE `capteur/actionneur`
-  ADD PRIMARY KEY (`numero de serie`);
-
---
--- Index pour la table `information`
---
-ALTER TABLE `information`
-  ADD PRIMARY KEY (`id`);
-
---
--- Index pour la table `logement`
---
-ALTER TABLE `logement`
-  ADD PRIMARY KEY (`id`);
-
---
--- Index pour la table `messagerie`
---
-ALTER TABLE `messagerie`
-  ADD PRIMARY KEY (`id`);
-
---
--- Index pour la table `piece`
---
-ALTER TABLE `piece`
-  ADD PRIMARY KEY (`id`);
-
---
--- Index pour la table `utilisateur`
---
-ALTER TABLE `utilisateur`
-  ADD PRIMARY KEY (`id`);
-
---
--- Index pour la table `utilisateur_logement`
---
-ALTER TABLE `utilisateur_logement`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT pour les tables exportées
---
-
---
--- AUTO_INCREMENT pour la table `messagerie`
---
-ALTER TABLE `messagerie`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
---
--- AUTO_INCREMENT pour la table `utilisateur`
---
-ALTER TABLE `utilisateur`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
