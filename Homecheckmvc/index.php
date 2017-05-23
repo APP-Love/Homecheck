@@ -25,7 +25,7 @@
             } 
 
              else if ($_GET['cible'] == "gestionadmin"){
-               echo "hhhh";
+               echo " .";
                 include("vue/gestionadmin.php");
 
             } 

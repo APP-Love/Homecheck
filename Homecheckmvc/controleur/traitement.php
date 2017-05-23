@@ -37,17 +37,17 @@ else {
             $e->getMessage();
     } 
 
-   // ini_set('sendmail_from', 'iribarne.manon@gmail.com'); 
+    ini_set("SMTP","smtp.gmail.com");
+    ini_set("smtp_port","25");
 
-    $nomEnvoyeur ="Domisep";
-    $emailEnvoyer = "iribarne.manon@gmail.com";
-    $entete ="MINE_Version : 1.0\r\n";
-    $entete .= '"Content_Type : text html; charset="UTF-8"'."\r\n" ; 
-    $entete .= " To : $nomEnvoyeur <$emailEnvoyer> \r\n"; 
-    $entete .= "From : ".$email." \r\n";
+    $to = "iribarne.manon@gmail.com";
+    $subject = $_POST['telephone'];
+    $body = $_POST['message'];
+    $headers = "From: ".$email."" . "\r\n";
 
-   //  $message = "telephone:".$telephone."<br\>".$message;
-    mail($emailEnvoyer,$message,$entete);
+    mail($to, $subject, $body, $headers);
+        
+    
 
 
 }

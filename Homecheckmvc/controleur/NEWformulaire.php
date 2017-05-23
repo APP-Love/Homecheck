@@ -32,15 +32,16 @@ else {
 
 
 
-    $nomEnvoyeur ="Domisep";
-    $emailEnvoyer = "iribarne.manon@gmail.com";
-    $entete ="MINE_Version : 1.0\r\n";
-    $entete .= '"Content_Type : text html; charset="UTF-8"'."\r\n" ; 
-    $entete .= " To : $nomEnvoyeur <$emailEnvoyer> \r\n"; 
-    $entete .= "From : $nom <$email> \r\n";
+   
+    ini_set("SMTP","smtp.gmail.com");
+    ini_set("smtp_port","25");
 
-   //  $message = "telephone:".$telephone."<br\>".$message;
-    mail($emailEnvoyer,$message,$entete);
+    $to = "iribarne.manon@gmail.com";
+    $subject = $_POST['telephone'];
+    $body = $_POST['message'];
+    $headers = "From: ".$email."" . "\r\n";
+
+    mail($to, $subject, $body, $headers);
 
 
 }
