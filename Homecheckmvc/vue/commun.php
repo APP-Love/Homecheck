@@ -32,7 +32,8 @@ function entete( $page ){
                             
                             <input type="password" name="mdp" id="mdp" placeholder="Mot de passe..." />
                             <input type="submit" name="valider" value="s'enregistrer" />
-                        </form>                  
+
+</form>                  
 
                     </div>
                     <div class="langues">
@@ -79,6 +80,7 @@ function entete( $page ){
                             <td class="td2" onclick="location= 'index.php?cible=meslogements'" style="cursor:pointer" > Mes logements </td>
                             <td class="td2" onclick="location='index.php?cible=monprofil'" style="cursor:pointer">  Mon profil </td>
                             <td class="td2" onclick="location='index.php?cible=contactez'" style="cursor:pointer"> Contactez-nous </td>
+                            <td class="td2" onclick"location='index.php?cible=mention'" style="cursor:pointer"> Mentions légales </td>
                         </tr>
                     </table>
                         <form class="recherche" method="post" action="retour.php" >
