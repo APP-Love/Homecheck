@@ -22,7 +22,14 @@
             } else if ($_GET['cible'] == "editprofil"){
                 include("vue/modifierMonProfil.php");
 
-            } 
+            }
+            //Partie ajoutée
+            else if ($_GET['cible'] == 'mention'){
+
+                include("vue/mention_legale.php");
+
+              }
+
 
              else if ($_GET['cible'] == "gestionadmin"){
                echo " .";
