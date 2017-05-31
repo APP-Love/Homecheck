@@ -78,6 +78,11 @@
                 include("controleur/traitement_angais.php");         // a verifier !
 
             }
+
+               else  if($_GET['cible'] == 'ajoutercapteur'){
+                include("controleur/formulaireajout_anglais.php");
+
+            }
            else if ($_GET['cible'] == "deco"){
                 // DÃ©truit toutes les variables de session
                 $_SESSION = array();

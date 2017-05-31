@@ -48,8 +48,7 @@ WHERE u.id= '".$a."'";
                    <p> <?php echo $donnees['adresse'] ." ". $donnees['code postal'] ." ". $donnees['ville']; ?> </p>
                   <p> <?php echo $donnees['superficie']; ?> mètres carrés</p>
                   <p> Nombre de pièces: <?php echo $donnees1[0]; ?> </p>
-                  <p> Type de pièce </p>
-                  <p> Nombre de personnes y vivant </p>
+                
               </ul>
 
 

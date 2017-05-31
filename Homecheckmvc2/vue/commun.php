@@ -1,7 +1,7 @@
 <?php
 
 
-include $_SERVER['DOCUMENT_ROOT']."/Homecheckmvc/modele/connexion_bdd.php";
+include $_SERVER['DOCUMENT_ROOT']."/Homecheckmvc2/modele/connexion_bdd.php";
 
 
 ini_set('display_errors','off');    // A rajouter a la fin car j'ai une erreur chelou

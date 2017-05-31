@@ -36,7 +36,7 @@ require "commun.php";
                 </div> <br/>
 
                 <div class="reference">
-                        <form method=
+                        
                              <p>
                          <label>Référence du capteur <br/> </label>  <br/> <input type="text"  id="pseudo" name="pseudo" placeholder="Numéro de série..."/><br/><br/><br/><br/>
                             </p>

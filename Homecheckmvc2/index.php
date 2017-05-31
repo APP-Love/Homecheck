@@ -94,6 +94,11 @@
 
             }
 
+             else  if($_GET['cible'] == 'ajoutercapteur'){
+                include("controleur/formulaireajout.php");
+
+            }
+
 
 
 
