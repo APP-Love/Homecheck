@@ -63,6 +63,21 @@ $reponse->closeCursor(); // Termine le traitement de la requête
              
          </div>
 
+         </section>
+
+         <section>
+           <div class="bouton2">
+
+                            <a href="index.php?cible=ajoutlogement" >  
+                            <div class="ajouter">
+                                 <img src="image/ajouter.jpg" alt="ajouter" title="Ajouter un capteur ou un actionneur"/>
+                           </div> 
+                            </a>
+
+
+                            
+                    </div>
+
          </section> 
         
     <?php

@@ -7,7 +7,55 @@ require "commun.php";
     ob_start();
     ?>
          
-      <div class="carre2"> 
+  <span class=ajouttitre> Ajouter un logement </span>
+                <br/><br/>
+
+<form method="post" action="index.php?cible=">
+           <p> <label> Type de logement: </label> <br/>
+                              <select name="type" id="type">
+                         <option value="humidité"> Maison</option>
+                         <option value="lumiere"> Appartement</option>
+                         
+                    </select>
+
+                     </p>
+ 
+      <p>
+                         <label> Adresse: <br/> </label>  <br/> <input type="text"  id="adresse" name="adresse" placeholder="ex: 238 rue de vanves"/><br/>
+                            </p>
+                             <p>
+                         <label> code postal:  <br/> </label>  <br/> <input type="text"  id="codepostal" name="codepostal" placeholder="ex: 75000"/><br/>
+                            </p>
+                             <p>
+                         <label> ville: <br/> </label>  <br/> <input type="text"  id="ville" name="ville" placeholder="ex: Paris"/><br/>
+                            </p>
+                             <p>
+                         <label> superficie: <br/> </label>  <br/> <input type="text"  id="superficie" name="superficie" placeholder="ex: 110"/> mètre carré<br/>
+                            </p>
+     
+ 
+                            <p> <label> Pièce de la maison: </label> <br/>
+                                 <input type="checkbox" name="salon" id="salon" class="td3"/> <label for="salon"> Salon </label><br/>
+                                <input type="checkbox" name="chambre1" id="chambre1" class="td3"/> <label for="chambre1"> Chambre 1 </label><br/> 
+                                <input type="checkbox" name="chambre2" id="chambre2" class="td3"/> <label for="chambre2"> Chambre 2 </label><br/>
+                                <input type="checkbox" name="cuisine" id="cuisine" class="td3"/> <label for="cuisine"> Cuisine </label><br/>
+                                <input type="checkbox" name="sdb1" id="sdb1" class="td3"/> <label for="sdb1"> Salle de bain 1 </label><br/>
+                                <input type="checkbox" name="sdb2" id="sdb2" class="td3"/> <label for="sdb2"> Salle de bain 2 </label><br/>
+                                <input type="checkbox" name="garage" id="garage" class="td3"/> <label for="garage"> Garage </label><br/>
+                                <input type="checkbox" name="terrasse" id="terrasse" class="td3"/> <label for="terrasse"> Terrasse </label><br/>
+
+                            </p>
+      <input type="submit" value="Valider" /> 
+    </form>
+      
+
+
+
+
+
+
+
+
 
            
         <div class="formulaire">
@@ -32,16 +80,16 @@ require "commun.php";
 
                      </p>
                              <p>
-                         <label> Adresse: <br/> </label>  <br/> <input type="text"  id="adresse" name="adresse" placeholder="ex: 238 rue de vanves"/><br/><br/><br/><br/>
+                         <label> Adresse: <br/> </label>  <br/> <input type="text"  id="adresse" name="adresse" placeholder="ex: 238 rue de vanves"/><br/>
                             </p>
                              <p>
-                         <label> code postal:  <br/> </label>  <br/> <input type="text"  id="codepostal" name="codepostal" placeholder="ex: 75000"/><br/><br/><br/><br/>
+                         <label> code postal:  <br/> </label>  <br/> <input type="text"  id="codepostal" name="codepostal" placeholder="ex: 75000"/><br/>
                             </p>
                              <p>
-                         <label> ville: <br/> </label>  <br/> <input type="text"  id="ville" name="ville" placeholder="ex: Paris"/><br/><br/><br/><br/>
+                         <label> ville: <br/> </label>  <br/> <input type="text"  id="ville" name="ville" placeholder="ex: Paris"/><br/>
                             </p>
                              <p>
-                         <label> superficie: <br/> </label>  <br/> <input type="text"  id="superficie" name="superficie" placeholder="ex: 110"/> mètre carré<br/><br/><br/><br/>
+                         <label> superficie: <br/> </label>  <br/> <input type="text"  id="superficie" name="superficie" placeholder="ex: 110"/> mètre carré<br/>
                             </p>
 
 
@@ -73,7 +121,7 @@ require "commun.php";
 
         </div>
 
-    </div>
+    
             
         
     <?php

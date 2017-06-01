@@ -98,6 +98,10 @@
                 include("controleur/formulaireajout.php");
 
             }
+else  if($_GET['cible'] == 'ajoutlogement'){
+                include("vue/ajouterlogement.php");
+
+            }
 
 
 
