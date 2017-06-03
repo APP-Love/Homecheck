@@ -1,0 +1,946 @@
+
+
+
+
+/*******************
+PAGE POP UP 
+**********************/
+
+
+
+
+/******************************
+    AJOUT DE CAPTEUR 
+******************************/
+
+.formulaire
+{
+    
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    left:300px;
+    top:270px;
+}
+
+.formulaire2{
+
+    display : flex;
+    justify-content: space-around;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.ajouttitre
+{
+    font-size: 34px;
+}
+
+.confirmation
+{
+    font-size: 10px;
+    text-align: none;
+}
+
+.valider
+{
+    border: solid black 1px;
+    width: 20%;
+    margin-left: 40%;
+    
+
+}
+
+.valider:hover, .valider:focus
+{
+    
+    transition: padding .3s, background .3s;
+    background-color: burlywood;
+
+}
+
+.typecapteur {
+    position:relative;
+    right :80px;
+    top : -0px;
+}
+
+.reference {
+    position:relative;
+    left :80px;
+    top : -0px;
+}
+
+.carre2{
+    margin : auto;
+    margin-top: 80px;
+    height: 400px;
+    width: 950px;
+    background: white;
+    border : 3px black solid;
+    box-shadow : 2px 2px 2px black;
+}
+
+.croix2 {
+    position:relative;
+    right :-605px;
+    top : -27px;
+}
+
+.croix2a {
+    position:relative;
+    right :-570px;
+    top : -27px;
+}
+
+
+/******************************
+     FIN AJOUT DE CAPTEUR 
+******************************/
+
+
+/*****************************
+    AJOUT LOGEMENT
+*****************************/
+
+
+ 
+
+.ajouttitre1
+{   
+margin:26%;
+    padding-left:5%;
+  padding-right:5%;
+  
+    font-size: 35px;
+        justify-content: center;
+}
+.confirm
+{   
+margin-left:15%;
+    padding-left:5%;
+  padding-right:5%;
+  
+    text-align;
+        justify-content: center;
+}
+.valid
+{   
+    padding-left:46%;
+  
+  
+    
+}
+.boxlogement2
+{
+   
+
+   margin-left:7%;
+   margin-right: 3%;
+
+  
+    justify-content: center;
+}
+.boxlogement
+{
+   
+margin-top: 5%;
+margin-bottom: 5%;
+   margin-left:20%;
+margin-right: 20%;
+padding-top: 10px;
+padding-bottom: 10px;
+  border : 1px black solid;
+    justify-content: center;
+}
+
+.formu2
+{
+    display: flex;
+
+    padding-left:9%;
+  padding-right:5%;
+  
+    
+}
+
+.ref2
+{   margin-left:17%;
+padding-left:10%;
+  padding-right:10%;
+    
+}
+
+
+.ref1
+{ 
+    
+    
+  padding-left:5%;
+    padding-right:5%;
+
+}
+
+
+
+select, .largeur
+{
+    width: 65%;
+}
+
+/******************************
+     FIN AJOUT DE LOGEMENT
+******************************/
+
+
+/*****************************
+    PAGE CAPTEUR H
+*****************************/
+
+@import "compass/css3";
+
+
+#carre {
+    margin : auto;
+    margin-top: 100px;
+    height: 500px;
+    width: 950px;
+    background: white;
+    border : 3px black solid;
+    box-shadow : 2px 2px 2px black;
+}
+
+h2 {
+    margin-left:40 ;
+    margin-top: 30;
+
+}
+
+
+.On {
+    
+    
+    position: relative;
+    top:-330px;
+    right:-450px;
+    background:green;
+    border:1px solid black;
+    cursor:pointer;
+    color: black;
+    font-family:Arial;
+    font-size:18px;
+    padding:12px 24px;
+}
+.On:hover {
+    
+    background-color:#3b781c;
+}
+.On:active {
+    position:relative;
+    top:1px;
+}
+
+
+.Off {
+    
+    
+   position: relative;
+    top:-330px;
+    right: -480px;
+    background:red;
+    border:1px solid black;
+    cursor:pointer;
+    color: black;
+    font-family:Arial;
+    font-size:18px;
+    padding:12px 24px;
+}
+.Off:hover {
+    
+    background-color:#bc3315;
+}
+.Off:active {
+    position:relative;
+    top:1px;
+}
+
+.capteurh {
+    position: relative;
+    top:-200px;
+    right: 60px;
+
+}
+
+
+.grapheh {
+     position: relative;
+    top:70px;
+    right: 120px;
+}
+.croixh {
+    position: relative;
+    top:-360px;
+    right:-657px;
+}
+
+.flechedh {
+    position: relative;
+    top:-85px;
+    right: -650px;
+}
+
+.flechegh {
+   position: relative;
+    top:-85px;
+    right:500px;
+}
+
+
+
+#menuh, #menuh ul /* Liste */     
+
+{
+        float : right;
+        padding : 0; /* pas de marge intérieure */
+
+        margin-right : -560; /* ni extérieure */
+
+        list-style : none; /* on supprime le style par défaut de la liste */
+
+        line-height : 21px; /* on définit une hauteur pour chaque élément */
+
+        text-align : center; /* on centre le texte qui se trouve dans la liste */
+
+}
+
+
+#menuh /* Ensemble du menu */
+
+{      position: relative;
+    top:-250px;
+    right: 10px;
+
+        font-weight : bold; /* on met le texte en gras */
+
+        font-family : Arial; /* on utilise Arial, c'est plus beau ^^ */
+
+        font-size : 12px; /* hauteur du texte : 12 pixels */
+
+}
+
+
+#menuh a /* Contenu des listes */
+
+{
+
+        display : block; /* on change le type d'élément, les liens deviennent des balises de type block */
+
+        padding : 0; /* aucune marge intérieure */
+
+        background :silver; /* couleur de fond */        
+
+        color : black; /* couleur du texte */
+
+        text-decoration : none; /* on supprime le style par défaut des liens (la plupart du temps = souligné) */
+
+        width : 144px; /* largeur */
+
+}
+
+
+#menuh li /* Elements des listes */      
+
+{ 
+
+        float : left; 
+
+        /* pour IE qui ne reconnaît pas "transparent" */
+
+        border-right : 1px solid #fff; /* on met une bordure blanche à droite de chaque élément */
+
+}
+
+
+/* IE ne reconnaissant pas le sélecteur ">" */
+
+html>body #menuh li
+
+{
+
+        border-right: 1px solid transparent ; /* on met une bordure transparente à droite de chaque élément */
+
+}
+
+
+#menuh li ul /* Sous-listes */
+
+{ 
+
+        position: absolute; /* Position absolue */
+
+        width: 144px; /* Largeur des sous-listes */
+
+        left: -999em; /* Hop, on envoie loin du champ de vision */
+
+}
+
+
+
+#menuh li ul li /* Éléments de sous-listes */
+
+{
+
+        /* pour IE qui ne reconnaît pas "transparent" (comme précédemment) */
+
+        border-top : 1px solid #fff; /* on met une bordure blanche en haut de chaque élément d'une sous liste */
+
+}
+
+
+/* IE ne reconnaissant pas le sélecteur ">" */
+
+html>body #menuh li ul li                
+
+{
+
+        border-top : 1px solid transparent; /* on met une bordure transparente en haut de chaque élément */
+
+}
+
+
+#menuh li ul ul 
+
+{
+
+        margin    : -22px 0 0 144px ; /* On décale les sous-sous-listes pour qu'elles ne soient pas au dessus des sous-listes */ 
+
+        /* pour IE qui ne reconnaît pas "transparent" (comme précédemment) */
+
+        border-left     : 1px solid #fff ; /* Petite bordure à gauche pour ne pas coller ... */      
+
+}
+
+
+/* IE ne reconnaissant pas le sélecteur ">" ... je me répète ;-) */
+
+html>body #menuh li ul ul                
+
+{
+
+        border-left     : 1px solid transparent ; /* on met une bordure transparente sur la gauche de chaque élément */
+
+}
+
+#menuh a:hover /* Lorsque la souris passe sur un des liens */    
+
+{
+
+        color: #000; /* On passe le texte en noir... */
+
+        background: #fff; /* ... et au contraire, le fond en blanc */
+
+}
+#menuh li:hover ul ul, #menuh li.sfhover ul ul /* Sous-sous-listes lorsque la souris passe sur un élément de liste */
+
+{
+
+        left: -999em; /* On expédie les sous-sous-listes hors du champ de vision */
+
+}
+
+
+#menuh li:hover ul, #menuh li li:hover ul, #menuh li.sfhover ul, #menuh li li.sfhover ul  /* Sous-listes lorsque la souris passe sur un élément de liste ET sous-sous-lites lorsque la souris passe sur un élément de sous-liste */
+
+{
+
+        left: auto; /* Repositionnement normal */
+
+        min-height: 0; /* Corrige un bug sous IE */
+
+}
+
+
+/*******************************
+    FIN PAGE CAPTEUR H
+*******************************/
+
+
+/********************************
+     PAGE CAPTEUR F
+********************************/
+
+
+
+@import "compass/css3";
+
+
+
+
+
+
+.croixf {
+    position: relative;
+    top:-360px;
+    right:-595px;
+}
+
+
+.capteurf {
+    position: relative;
+    top:-160px;
+    right: 100px;
+}
+
+
+.graphef {
+     position: relative;
+    top:70px;
+    right: 170px;
+}
+
+
+.flechedf {
+    position: relative;
+    top:-85px;
+    right: -600px;
+    
+}
+
+.flechegf {
+    position: relative;
+    top:-85px;
+    right:575px;
+
+
+}
+
+
+
+#menuf, #menuf ul /* Liste */     
+
+{
+        float : right;
+        padding : 0; /* pas de marge intérieure */
+
+        margin-right : -560; /* ni extérieure */
+
+        list-style : none; /* on supprime le style par défaut de la liste */
+
+        line-height : 21px; /* on définit une hauteur pour chaque élément */
+
+        text-align : center; /* on centre le texte qui se trouve dans la liste */
+
+}
+
+
+#menuf /* Ensemble du menu */
+
+{      
+  position: relative;
+    top:-250px;
+    right: 10px;
+
+
+        font-weight : bold; /* on met le texte en gras */
+
+        font-family : Arial; /* on utilise Arial, c'est plus beau ^^ */
+
+        font-size : 12px; /* hauteur du texte : 12 pixels */
+
+}
+
+
+#menuf a /* Contenu des listes */
+
+{
+
+        display : block; /* on change le type d'élément, les liens deviennent des balises de type block */
+
+        padding : 0; /* aucune marge intérieure */
+
+        background :silver; /* couleur de fond */        
+
+        color : black; /* couleur du texte */
+
+        text-decoration : none; /* on supprime le style par défaut des liens (la plupart du temps = souligné) */
+
+        width : 144px; /* largeur */
+
+}
+
+
+#menuf li /* Elements des listes */      
+
+{ 
+
+        float : left; 
+
+        /* pour IE qui ne reconnaît pas "transparent" */
+
+        border-right : 1px solid #fff; /* on met une bordure blanche à droite de chaque élément */
+
+}
+
+
+/* IE ne reconnaissant pas le sélecteur ">" */
+
+html>body #menuf li
+
+{
+
+        border-right: 1px solid transparent ; /* on met une bordure transparente à droite de chaque élément */
+
+}
+
+
+#menuf li ul /* Sous-listes */
+
+{ 
+
+        position: absolute; /* Position absolue */
+
+        width: 144px; /* Largeur des sous-listes */
+
+        left: -999em; /* Hop, on envoie loin du champ de vision */
+
+}
+
+
+
+#menuf li ul li /* Éléments de sous-listes */
+
+{
+
+        /* pour IE qui ne reconnaît pas "transparent" (comme précédemment) */
+
+        border-top : 1px solid #fff; /* on met une bordure blanche en haut de chaque élément d'une sous liste */
+
+}
+
+
+/* IE ne reconnaissant pas le sélecteur ">" */
+
+html>body #menuf li ul li                
+
+{
+
+        border-top : 1px solid transparent; /* on met une bordure transparente en haut de chaque élément */
+
+}
+
+
+#menuf li ul ul 
+
+{
+
+        margin    : -22px 0 0 144px ; /* On décale les sous-sous-listes pour qu'elles ne soient pas au dessus des sous-listes */ 
+
+        /* pour IE qui ne reconnaît pas "transparent" (comme précédemment) */
+
+        border-left     : 1px solid #fff ; /* Petite bordure à gauche pour ne pas coller ... */      
+
+}
+
+
+/* IE ne reconnaissant pas le sélecteur ">" ... je me répète ;-) */
+
+html>body #menuf li ul ul                
+
+{
+
+        border-left     : 1px solid transparent ; /* on met une bordure transparente sur la gauche de chaque élément */
+
+}
+
+#menuf a:hover /* Lorsque la souris passe sur un des liens */    
+
+{
+
+        color: #000; /* On passe le texte en noir... */
+
+        background: #fff; /* ... et au contraire, le fond en blanc */
+
+}
+#menuf li:hover ul ul, #menuf li.sfhover ul ul /* Sous-sous-listes lorsque la souris passe sur un élément de liste */
+
+{
+
+        left: -999em; /* On expédie les sous-sous-listes hors du champ de vision */
+
+}
+
+
+#menuf li:hover ul, #menuf li li:hover ul, #menuf li.sfhover ul, #menuf li li.sfhover ul  /* Sous-listes lorsque la souris passe sur un élément de liste ET sous-sous-lites lorsque la souris passe sur un élément de sous-liste */
+
+{
+
+        left: auto; /* Repositionnement normal */
+
+        min-height: 0; /* Corrige un bug sous IE */
+
+}
+
+/*************************************
+    FIN PAGE CAPTEUR F
+************************************/
+
+/**********************************
+    PAGE CAPTEUR T
+*********************************/
+
+
+@import "compass/css3";
+
+
+
+.Ont {
+    
+    
+    position: relative;
+    top:-80px;
+    right:-430px;
+    background:green;
+    border:1px solid black;
+    cursor:pointer;
+    color: black;
+    font-family:Arial;
+    font-size:18px;
+    padding:12px 24px;
+}
+.Ont:hover {
+    
+    background-color:#3b781c;
+}
+.Ont:active {
+    position:relative;
+    top:1px;
+}
+
+
+.Offt {
+    
+    
+   position: relative;
+    top:-80px;
+    right: -455px;
+    background:red;
+    border:1px solid black;
+    cursor:pointer;
+    color: black;
+    font-family:Arial;
+    font-size:18px;
+    padding:12px 24px;
+}
+.Offt:hover {
+    
+    background-color:#bc3315;
+}
+.Offt:active {
+    position:relative;
+    top:1px;
+}
+.croixt {
+    position: relative;
+    top:-120px;
+    right:-720px;
+}
+
+
+.capteurt {
+    position: relative;
+    top:0px;
+    right: 100px;
+}
+
+
+.graphet {
+     position: relative;
+    top:0px;
+    right: -230px;
+}
+
+
+.flechedt {
+    position: relative;
+    top:130px;
+    right: -700px;
+    
+}
+
+.flechegt{
+    position: relative;
+    top:130px;
+    left:-425px;
+
+
+}
+
+
+#menut, #menut ul /* Liste */     
+
+{
+        float : right;
+        padding : 0; /* pas de marge intérieure */
+
+        margin-right : -692; /* ni extérieure */
+
+        list-style : none; /* on supprime le style par défaut de la liste */
+
+        line-height : 21px; /* on définit une hauteur pour chaque élément */
+
+        text-align : center; /* on centre le texte qui se trouve dans la liste */
+
+}
+
+
+#menut /* Ensemble du menu */
+
+{      position: relative;
+    top:0px;
+    right:0px;
+
+   
+
+        font-weight : bold; /* on met le texte en gras */
+
+        font-family : Arial; /* on utilise Arial, c'est plus beau ^^ */
+
+        font-size : 12px; /* hauteur du texte : 12 pixels */
+
+}
+
+
+#menut a /* Contenu des listes */
+
+{
+
+        display : block; /* on change le type d'élément, les liens deviennent des balises de type block */
+
+        padding : 0; /* aucune marge intérieure */
+
+        background :silver; /* couleur de fond */        
+
+        color : black; /* couleur du texte */
+
+        text-decoration : none; /* on supprime le style par défaut des liens (la plupart du temps = souligné) */
+
+        width : 144px; /* largeur */
+
+}
+
+
+#menut li /* Elements des listes */      
+
+{ 
+
+        float : left; 
+
+        /* pour IE qui ne reconnaît pas "transparent" */
+
+        border-right : 1px solid #fff; /* on met une bordure blanche à droite de chaque élément */
+
+}
+
+
+/* IE ne reconnaissant pas le sélecteur ">" */
+
+html>body #menut li
+
+{
+
+        border-right: 1px solid transparent ; /* on met une bordure transparente à droite de chaque élément */
+
+}
+
+
+#menut li ul /* Sous-listes */
+
+{ 
+
+        position: absolute; /* Position absolue */
+
+        width: 144px; /* Largeur des sous-listes */
+
+        left: -999em; /* Hop, on envoie loin du champ de vision */
+
+}
+
+
+
+#menut li ul li /* Éléments de sous-listes */
+
+{
+
+        /* pour IE qui ne reconnaît pas "transparent" (comme précédemment) */
+
+        border-top : 1px solid #fff; /* on met une bordure blanche en haut de chaque élément d'une sous liste */
+
+}
+
+
+/* IE ne reconnaissant pas le sélecteur ">" */
+
+html>body #menut li ul li                
+
+{
+
+        border-top : 1px solid transparent; /* on met une bordure transparente en haut de chaque élément */
+
+}
+
+
+
+#menut li ul ul 
+
+{
+
+        margin    : -22px 0 0 144px ; /* On décale les sous-sous-listes pour qu'elles ne soient pas au dessus des sous-listes */ 
+
+        /* pour IE qui ne reconnaît pas "transparent" (comme précédemment) */
+
+        border-left     : 1px solid #fff ; /* Petite bordure à gauche pour ne pas coller ... */      
+
+}
+
+
+/* IE ne reconnaissant pas le sélecteur ">" ... je me répète ;-) */
+
+html>body #menut li ul ul                
+
+{
+
+        border-left     : 1px solid transparent ; /* on met une bordure transparente sur la gauche de chaque élément */
+
+}
+
+#menut a:hover /* Lorsque la souris passe sur un des liens */    
+
+{
+
+        color: #000; /* On passe le texte en noir... */
+
+        background: #fff; /* ... et au contraire, le fond en blanc */
+
+}
+#menut li:hover ul ul, #menut li.sfhover ul ul /* Sous-sous-listes lorsque la souris passe sur un élément de liste */
+
+{
+
+        left: -999em; /* On expédie les sous-sous-listes hors du champ de vision */
+
+}
+
+
+#menut li:hover ul, #menut li li:hover ul, #menut li.sfhover ul, #menut li li.sfhover ul  /* Sous-listes lorsque la souris passe sur un élément de liste ET sous-sous-lites lorsque la souris passe sur un élément de sous-liste */
+
+{
+
+        left: auto; /* Repositionnement normal */
+
+        min-height: 0; /* Corrige un bug sous IE */
+
+}
+
+/**********************************
+    FIN PAGE CAPTEUR T
+**********************************/
