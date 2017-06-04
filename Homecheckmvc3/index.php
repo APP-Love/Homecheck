@@ -1,4 +1,4 @@
-<?php 
+		<?php 
    session_start();
 
 
@@ -38,6 +38,9 @@
                 include("vue/modifierMonProfil.php");
 
             } 
+	      else if ($_GET['cible'] == "mention"){
+                include("vue/mention_legale.php");
+            }
 
              else if ($_GET['cible'] == "gestionadmin"){
                echo " .";
