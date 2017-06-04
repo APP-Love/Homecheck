@@ -1,6 +1,5 @@
 <?php
 
-
 include $_SERVER['DOCUMENT_ROOT']."/Homecheckmvc2/modele/connexion_bdd.php";
 
 
@@ -10,8 +9,7 @@ ini_set('display_errors','off');    // A rajouter a la fin car j'ai une erreur c
 
 // GÃ©nÃ¨re le code HTML de l'entÃªte
 function entete( $page ){
-    if ($page==1) {
-         ob_start();
+    if ($page==1) {         ob_start();
     ?>
         <div class="rectangle1">
                 <div class="rectangle2">
@@ -21,8 +19,7 @@ function entete( $page ){
                         <ul>
                             <p class="Homecheck" > HomeCheck </p>
                             <p class="Yourhouse" > Your house in your pocket </p>
-                        </ul>
-                    </div>
+                        </ul>                    </div>
                 
                     <div id="inscription">
                         <form class="inscription" method="post" action="index.php?cible=verif" >
@@ -34,7 +31,7 @@ function entete( $page ){
                             <label for="mdp"> Votre mot de passe : </label>
                             
                             <input type="password" name="mdp" id="mdp" placeholder="Mot de passe..." />
-                            <input type="submit" name="valider" value="s'enregistrer" />
+                            <input type="submit" name="valider" value="Se connecter" />
                         </form>                  
 
                     </div>
