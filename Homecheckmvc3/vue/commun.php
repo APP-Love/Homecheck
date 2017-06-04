@@ -22,7 +22,7 @@ function entete( $page ){
                         </ul>                    </div>
                 
                     <div id="inscription">
-                        <form class="inscription" method="post" action="index.php?cible=verif" >
+2                        <form class="inscription" method="post" action="index.php?cible=verif" >
                             <label for=" pseudo" > Votre pseudo : </label> 
                             
                             <input type="text" name="identifiant" id="identifiant" placeholder="Pseudo ou mail..."  />
@@ -32,22 +32,23 @@ function entete( $page ){
                             
                             <input type="password" name="mdp" id="mdp" placeholder="Mot de passe..." />
                             <input type="submit" name="valider" value="Se connecter" />
-                        </form>                  
+d                        </form>                  
 
                     </div>
-                    <div class="langues">
-                    <a href= "index.php?cible=francais"> <img class="francais" src="image/francais.gif" type="Français" alt="Français" /></a>
+n                    <div class="langues">
+
+                        <a href= "index.php?cible=francais"> <img class="francais" src="image/francais.gif" type="Français" alt="Français" /></a>
                     <a href= "index2.php?cible=anglais" > <img class="anglais" src="image/anglais.gif"  type="Anglais" alt="Anglais" /></a>
                     </div>
                 </div>
             </div>
-    <?php
+t    <?php
     $entete = ob_get_clean();
     return $entete;
           
     }
 
-
+d
    else if ($page==2) {
      ob_start();
     ?>
@@ -79,6 +80,7 @@ function entete( $page ){
                             <td class="td2" onclick="location= 'index.php?cible=meslogements'" style="cursor:pointer" > Mes logements </td>
                             <td class="td2" onclick="location='index.php?cible=monprofil'" style="cursor:pointer">  Mon profil </td>
                             <td class="td2" onclick="location='index.php?cible=contactez'" style="cursor:pointer"> Contactez-nous </td>
+                            <td class="td2" onclick="location='index.php?cible=mention'" style="cursor:pointer"> Mentions légales </td>
                         </tr>
                     </table>
                         <form class="recherche" method="post" action="retour.php" >
