@@ -34,7 +34,7 @@ function entete( $page ){
                             <label for="mdp"> Votre mot de passe : </label>
                             
                             <input type="password" name="mdp" id="mdp" placeholder="Mot de passe..." />
-                            <input type="submit" name="valider" value="s'enregistrer" />
+                            <input type="submit" name="valider" value="Se connecter" />
                         </form>                  
 
                     </div>
