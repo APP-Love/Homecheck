@@ -1,0 +1,277 @@
+﻿-- phpMyAdmin SQL Dump
+-- version 4.6.5.2
+-- https://www.phpmyadmin.net/
+--
+-- Client :  127.0.0.1
+<<<<<<< HEAD
+-- Généré le :  Mar 23 Mai 2017 à 12:38
+=======
+-- Généré le :  Mar 23 Mai 2017 à 12:18
+>>>>>>> origin/master
+-- Version du serveur :  10.1.21-MariaDB
+-- Version de PHP :  7.0.15
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de données :  `bdd`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `automatisations`
+--
+
+CREATE TABLE `automatisations` (
+  `id` int(255) NOT NULL,
+  `action` int(255) NOT NULL,
+  `pieces` int(255) NOT NULL,
+  `recurrence` int(255) NOT NULL,
+  `heureDebut` time(6) NOT NULL,
+  `heureFin` time(6) NOT NULL,
+  `temperature` int(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `capteuractionneur`
+--
+
+CREATE TABLE `capteuractionneur` (
+  `numero de serie` varchar(255) NOT NULL,
+  `id_piece` int(255) NOT NULL,
+  `reference` varchar(255) NOT NULL,
+  `type` int(255) NOT NULL COMMENT '1: fumée',
+  `description` varchar(255) NOT NULL,
+  `etat` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+<<<<<<< HEAD
+
+--
+-- Contenu de la table `capteuractionneur`
+--
+
+INSERT INTO `capteuractionneur` (`numero de serie`, `id_piece`, `reference`, `type`, `description`, `etat`) VALUES
+('1', 1, '001', 1, 'capteur température', 1),
+('2', 1, '002', 2, 'capteur humidité', 1),
+('3', 1, '003', 3, 'capteur fenêtre', 1);
+=======
+>>>>>>> origin/master
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `information`
+--
+
+CREATE TABLE `information` (
+  `id` int(255) NOT NULL,
+  `numero de serie` varchar(255) NOT NULL,
+  `id-logement` int(255) NOT NULL,
+  `donnees physiques` int(255) NOT NULL,
+  `temps` int(255) NOT NULL,
+  `nom` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `logement`
+--
+
+CREATE TABLE `logement` (
+  `id` int(255) NOT NULL,
+  `type` int(2) NOT NULL,
+  `adresse` varchar(255) NOT NULL,
+  `code postal` int(255) NOT NULL,
+  `ville` varchar(255) NOT NULL,
+  `superficie` int(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Contenu de la table `logement`
+--
+
+INSERT INTO `logement` (`id`, `type`, `adresse`, `code postal`, `ville`, `superficie`) VALUES
+(1, 2, '57 rue Sedaine', 75011, 'PARIS', 50);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `messagerie`
+--
+
+CREATE TABLE `messagerie` (
+  `id` int(11) NOT NULL,
+  `nom` varchar(200) NOT NULL,
+  `mail` varchar(255) NOT NULL,
+  `telephone` varchar(255) NOT NULL,
+  `message` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Contenu de la table `messagerie`
+--
+
+INSERT INTO `messagerie` (`id`, `nom`, `mail`, `telephone`, `message`) VALUES
+(2, 'iribarne', 'natho-metal@hotmail.fr', '00000000', 'test'),
+(3, 'iribarne', 'natho-metal@hotmail.fr', '00000000', 'test'),
+(4, 'manon', 'iribarne.manon@gmail.com', '000000000', 'helo'),
+(5, 'SUBLIME', 'iribarne.manon@gmail.com', '0758391321', 'luc'),
+(6, 'jjsnsx', 'manon@juniorisep.com', '0758391323', 'manon'),
+(7, 'rodin', 'loli@hksqd.com', '0758391320', 'try'),
+(8, 'tujkl', 'miribarne@juniorisep.com', '00000000', 'on essai');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `piece`
+--
+
+CREATE TABLE `piece` (
+  `id` int(255) NOT NULL,
+  `id-logement` int(255) NOT NULL,
+  `nombre de capteurs` int(255) NOT NULL,
+  `nom` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Contenu de la table `piece`
+--
+
+INSERT INTO `piece` (`id`, `id-logement`, `nombre de capteurs`, `nom`) VALUES
+(1, 1, 3, 'CUISINE'),
+(2, 1, 1, 'SALLE DE BAIN'),
+(3, 1, 3, 'CHAMBRE');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `utilisateur`
+--
+
+CREATE TABLE `utilisateur` (
+  `id` int(255) NOT NULL,
+  `nom` varchar(100) NOT NULL,
+  `prenom` varchar(100) NOT NULL,
+  `identifiant` varchar(100) NOT NULL,
+  `mdp` varchar(50) NOT NULL,
+  `date de naissance` date NOT NULL,
+  `telephone` varchar(255) NOT NULL,
+  `mail` varchar(255) NOT NULL,
+  `adresse` varchar(255) NOT NULL,
+  `code postal` int(255) NOT NULL,
+  `ville` varchar(255) NOT NULL,
+  `type` int(255) NOT NULL,
+  `message` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Contenu de la table `utilisateur`
+--
+
+<<<<<<< HEAD
+INSERT INTO `utilisateur` (`id`, `nom`, `prenom`, `identifiant`, `mdp`, `date de naissance`, `telephone`, `mail`, `adresse`, `code postal`, `ville`, `type`, `message`) VALUES
+(1, 'SUBLIME', 'Jeremie', 'jeremie.sublime@isep.fr', 'Motdepasse', '2017-05-11', '0656569696', 'jeremie.subime@isep.fr', '25 rue de vanves', 75015, 'Paris', 1, ''),
+(1, 'SUBLIME', 'Jeremie', 'jeremie.sublime@isep.fr', 'Motdepasse', '2017-05-11', '0656569696', 'jeremie.subime@isep.fr', '25 rue de vanves', 75015, 'Paris', 1, '');
+
+=======
+INSERT INTO `utilisateur` (`id`, `nom`, `prenom`, `identifiant`, `mdp`, `date de naissance`, `telephone`, `mail`, `numero`, `adresse`, `code postal`, `ville`, `type`, `message`) VALUES
+(1, 'SUBLIME', 'jérémie', 'jeremie.sublime@isep.fr', 'Motdepasse', '2017-05-11', '0657485768', 'jeremie.sublime@isep.fr', 10, 'Abbé groult', 75011, 'paris', 1, 'jcsjqcb');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `utilisateur_logement`
+--
+
+CREATE TABLE `utilisateur_logement` (
+  `id` int(255) NOT NULL,
+  `id-logement` int(255) NOT NULL,
+  `id-utilisateur` int(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Index pour les tables exportées
+--
+
+--
+-- Index pour la table `automatisations`
+--
+ALTER TABLE `automatisations`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `capteuractionneur`
+--
+ALTER TABLE `capteuractionneur`
+  ADD PRIMARY KEY (`numero de serie`);
+
+--
+-- Index pour la table `information`
+--
+ALTER TABLE `information`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `logement`
+--
+ALTER TABLE `logement`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `messagerie`
+--
+ALTER TABLE `messagerie`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `piece`
+--
+ALTER TABLE `piece`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `utilisateur`
+--
+ALTER TABLE `utilisateur`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `utilisateur_logement`
+--
+ALTER TABLE `utilisateur_logement`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT pour les tables exportées
+--
+
+--
+-- AUTO_INCREMENT pour la table `automatisations`
+--
+ALTER TABLE `automatisations`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT pour la table `messagerie`
+--
+ALTER TABLE `messagerie`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+--
+-- AUTO_INCREMENT pour la table `utilisateur`
+--
+ALTER TABLE `utilisateur`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+>>>>>>> origin/master
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
