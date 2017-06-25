@@ -34,7 +34,11 @@ function entete( $page ){
                             <label for="mdp"> Votre mot de passe : </label>
                             
                             <input type="password" name="mdp" id="mdp" placeholder="Mot de passe..." />
+<<<<<<< HEAD:Homecheck/vue/commun.php
                             <input type="submit" name="valider" value="Se connecter " />
+=======
+                            <input type="submit" name="valider" value="Se connecter" />
+>>>>>>> origin/master:Homecheckmvc4/vue/commun.php
                         </form>                  
 
                     </div>
