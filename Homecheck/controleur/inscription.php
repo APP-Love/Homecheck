@@ -11,20 +11,7 @@ if(isset($_GET['cible']) && $_GET['cible']=="verif"){                           
         $reponse = $bdd->query('SELECT * FROM utilisateur WHERE mdp="'.$_POST['mdp'].'"');
         $max_row = $reponse->fetch(PDO:: FETCH_ASSOC);
 
-        $identifiant = $_POST['identifiant'];
-        $mdp = $_POST['mdp'];
 
-        $identifiant=filter_input(INPUT_POST,'identifiant', FILTER_VALIDATE_EMAIL);
-        if ($identifiant===false)  die('identifiant incorrect');
-        $mdp=filter_input(INPUT_POST,'mdp', FILTER_DEFAULT);
-        if ($mdp===false)  die('mot de passe incorrect');
-
-
-        $stmt = $bdd->prepare("SELECT identifiant, mdp FROM utilisateur WHERE identifiant = :identifiant AND mdp = :mdp");
-        $stmt->bindValue(':identifiant', $identifiant, PDO::PARAM_STR);
-        $stmt->bindValue(':mdp', $mdp, PDO::PARAM_STR);
-        $stmt->execute();
-     
        if($_POST['mdp']  == "admin" AND $_POST['identifiant'] == "administrateur@isep.fr"){                   // si mdp et identifiant bon 
                
                 $_SESSION['id']="2";

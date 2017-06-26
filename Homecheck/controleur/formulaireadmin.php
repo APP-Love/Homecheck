@@ -2,6 +2,8 @@
 
  include ("modele/connexion_bdd.php");
            $idlog=$_SESSION['logement'];
+          $nomadmin=$_POST['Nom'];
+          $prenomadmin=$_POST['Prenom'] ;
           $idadmin=$_POST['Identifiant'];              
           $mdpadmin=$_POST['mdp'];
           $mailadmin=$_POST['mail'];
@@ -55,7 +57,7 @@
               $droitcapteur='Off';
                 }  
  
-  $sql66 =  "INSERT INTO utilisateur (`id`, `nom`, `prenom`, `identifiant`, `mdp`, `dateDEnaissance`, `telephone`,`mail`, `adresse`, `codepostal`,`ville`, `type`,`message`, `droitprofil`,`droitajoutlog`, `droitajoutcap`,`droitaction`, `droitphoto`,`droitauto`, `droitcapteur`) VALUES ('', '', '', '".$idadmin."', '".$mdpadmin."', '', '0XXXXXXXXXX', '".$mailadmin."','','','','".$typeadmin."','NEW','".$droitprofil."','".$droitajoutlog."','".$droitajoutcap."','".$droitaction."','".$droitphoto."','".$droitauto."','".$droitcapteur."')";
+  $sql66 =  "INSERT INTO utilisateur (`id`, `nom`, `prenom`, `identifiant`, `mdp`, `dateDEnaissance`, `telephone`,`mail`, `adresse`, `codepostal`,`ville`, `type`,`message`, `droitprofil`,`droitajoutlog`, `droitajoutcap`,`droitaction`, `droitphoto`,`droitauto`, `droitcapteur`) VALUES ('', '".$nomadmin."', '".$prenomadmin."', '".$idadmin."', '".$mdpadmin."', '', '0XXXXXXXXXX', '".$mailadmin."','','','','".$typeadmin."','NEW','".$droitprofil."','".$droitajoutlog."','".$droitajoutcap."','".$droitaction."','".$droitphoto."','".$droitauto."','".$droitcapteur."')";
     																		
 
         $bdd->query($sql66);
@@ -71,6 +73,6 @@
       $bdd->query($sql68);
        															
         echo "Administrateur créé, n'oubliez pas de remplir les informations complémentaire du profil à la première connexion";
-   include 'vue/gestionadmin.php'
 
-?> 
+
+include "vue/logementChoisi.php" ;

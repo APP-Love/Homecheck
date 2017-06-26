@@ -97,7 +97,7 @@
             }
 
                else  if($_GET['cible'] == 'ajoutercapteur'){
-                include("controleur/formulaireajout_anglais2.php");
+                include("controleur/formulaireajout2_anglais.php");
 
             }
 

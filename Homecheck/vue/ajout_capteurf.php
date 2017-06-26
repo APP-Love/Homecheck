@@ -2,6 +2,11 @@
   ob_start();
     ?>
       <a href="index.php?cible=capteurf">
+
+
+
+
+
 	<div class="capteurplace">
                                 <div class="capteur_img"> 
 

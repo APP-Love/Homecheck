@@ -683,6 +683,271 @@ html>body #menuf li ul ul
 /*************************************
     FIN PAGE CAPTEUR F
 ************************************/
+/**********************************
+    PAGE CAPTEUR L
+*********************************/
+
+
+@import "compass/css3";
+
+
+
+.Onl {
+    
+    
+    position: relative;
+    top:-80px;
+    right:-430px;
+    background:green;
+    border:1px solid black;
+    cursor:pointer;
+    color: black;
+    font-family:Arial;
+    font-size:18px;
+    padding:12px 24px;
+}
+.Onl:hover {
+    
+    background-color:#3b781c;
+}
+.Onl:active {
+    position:relative;
+    top:1px;
+}
+
+
+.Offl {
+    
+    
+   position: relative;
+    top:-80px;
+    right: -455px;
+    background:red;
+    border:1px solid black;
+    cursor:pointer;
+    color: black;
+    font-family:Arial;
+    font-size:18px;
+    padding:12px 24px;
+}
+.Offl:hover {
+    
+    background-color:#bc3315;
+}
+.Offl:active {
+    position:relative;
+    top:1px;
+}
+.croixl {
+    position: relative;
+    top:-120px;
+    right:-720px;
+}
+
+
+.capteurl {
+    position: relative;
+    top:0px;
+    right: 100px;
+}
+
+
+.graphel {
+     position: relative;
+    top:0px;
+    right: -230px;
+}
+
+
+.flechedl {
+    position: relative;
+    top:130px;
+    right: -700px;
+    
+}
+
+.flechegl{
+    position: relative;
+    top:130px;
+    left:-425px;
+
+
+}
+
+
+#menul, #menul ul /* Liste */     
+
+{
+        float : right;
+        padding : 0; /* pas de marge intérieure */
+
+        margin-right : -692; /* ni extérieure */
+
+        list-style : none; /* on supprime le style par défaut de la liste */
+
+        line-height : 21px; /* on définit une hauteur pour chaque élément */
+
+        text-align : center; /* on centre le texte qui se trouve dans la liste */
+
+}
+
+
+#menul /* Ensemble du menu */
+
+{      position: relative;
+    top:0px;
+    right:0px;
+
+   
+
+        font-weight : bold; /* on met le texte en gras */
+
+        font-family : Arial; /* on utilise Arial, c'est plus beau ^^ */
+
+        font-size : 12px; /* hauteur du texte : 12 pixels */
+
+}
+
+
+#menul a /* Contenu des listes */
+
+{
+
+        display : block; /* on change le type d'élément, les liens deviennent des balises de type block */
+
+        padding : 0; /* aucune marge intérieure */
+
+        background :silver; /* couleur de fond */        
+
+        color : black; /* couleur du texte */
+
+        text-decoration : none; /* on supprime le style par défaut des liens (la plupart du temps = souligné) */
+
+        width : 144px; /* largeur */
+
+}
+
+
+#menul li /* Elements des listes */      
+
+{ 
+
+        float : left; 
+
+        /* pour IE qui ne reconnaît pas "transparent" */
+
+        border-right : 1px solid #fff; /* on met une bordure blanche à droite de chaque élément */
+
+}
+
+
+/* IE ne reconnaissant pas le sélecteur ">" */
+
+html>body #menul li
+
+{
+
+        border-right: 1px solid transparent ; /* on met une bordure transparente à droite de chaque élément */
+
+}
+
+
+#menul li ul /* Sous-listes */
+
+{ 
+
+        position: absolute; /* Position absolue */
+
+        width: 144px; /* Largeur des sous-listes */
+
+        left: -999em; /* Hop, on envoie loin du champ de vision */
+
+}
+
+
+
+#menul li ul li /* Éléments de sous-listes */
+
+{
+
+        /* pour IE qui ne reconnaît pas "transparent" (comme précédemment) */
+
+        border-top : 1px solid #fff; /* on met une bordure blanche en haut de chaque élément d'une sous liste */
+
+}
+
+
+/* IE ne reconnaissant pas le sélecteur ">" */
+
+html>body #menul li ul li                
+
+{
+
+        border-top : 1px solid transparent; /* on met une bordure transparente en haut de chaque élément */
+
+}
+
+
+
+#menul li ul ul 
+
+{
+
+        margin    : -22px 0 0 144px ; /* On décale les sous-sous-listes pour qu'elles ne soient pas au dessus des sous-listes */ 
+
+        /* pour IE qui ne reconnaît pas "transparent" (comme précédemment) */
+
+        border-left     : 1px solid #fff ; /* Petite bordure à gauche pour ne pas coller ... */      
+
+}
+
+
+/* IE ne reconnaissant pas le sélecteur ">" ... je me répète ;-) */
+
+html>body #menul li ul ul                
+
+{
+
+        border-left     : 1px solid transparent ; /* on met une bordure transparente sur la gauche de chaque élément */
+
+}
+
+#menul a:hover /* Lorsque la souris passe sur un des liens */    
+
+{
+
+        color: #000; /* On passe le texte en noir... */
+
+        background: #fff; /* ... et au contraire, le fond en blanc */
+
+}
+#menul li:hover ul ul, #menul li.sfhover ul ul /* Sous-sous-listes lorsque la souris passe sur un élément de liste */
+
+{
+
+        left: -999em; /* On expédie les sous-sous-listes hors du champ de vision */
+
+}
+
+
+#menul li:hover ul, #menul li li:hover ul, #menul li.sfhover ul, #menu li li.sfhover ul  /* Sous-listes lorsque la souris passe sur un élément de liste ET sous-sous-lites lorsque la souris passe sur un élément de sous-liste */
+
+{
+
+        left: auto; /* Repositionnement normal */
+
+        min-height: 0; /* Corrige un bug sous IE */
+
+}
+
+/**********************************
+    FIN PAGE CAPTEUR L
+**********************************/
+
+
+
+
+
 
 /**********************************
     PAGE CAPTEUR T

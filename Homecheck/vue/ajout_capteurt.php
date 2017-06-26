@@ -1,8 +1,14 @@
 <?php
   ob_start();
-    ?>
+    ?>  
+
+  
+
+
+
       <a href="index.php?cible=capteurt">
 	<div class="capteurplace">
+
                                 <div class="capteur_img"> 
 
                                       <img src="image/capteur.png" alt=" capteur" /> 
@@ -12,7 +18,10 @@
                                 <div class="slider round">
                                 </div>
                               </label>
+
+
                     </div> 
+                  
                     </a>
      
         

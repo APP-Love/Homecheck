@@ -9,9 +9,9 @@
      include ("controleur/inscription.php");
 
  	}
-    /*if(  !isset($_SESSION["identifiant"]) && !isset($_SESSION["mdp"]) && isset($_GET['cible']) && $_GET['cible'] == 'francais'){
+    if(  !isset($_SESSION["identifiant"]) && !isset($_SESSION["mdp"]) && isset($_GET['cible']) && $_GET['cible'] == 'francais'){
              include("vue/pageDaccueil.php");
-    }	*/
+    }	
 
     if(!isset($_SESSION["identifiant"]) && !isset($_SESSION["mdp"])&& isset($_GET['cible']) && $_GET['cible'] =="NEWformulaire" ){
                 include("controleur/NEWformulaire.php");

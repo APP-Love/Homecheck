@@ -9,13 +9,7 @@
    if(isset($_POST['choixpieces']))  { 
         $_SESSION['choixp']=$_POST['choixpieces'];            
       } 
-      else { $sql51="SELECT idp FROM piece WHERE nom='SALON' AND id_logement = '".$mai."'";
-$reponse = $bdd->query($sql51);
-$don = $reponse->fetch();
-$_SESSION['choixp']=$don[0];
-
-      } 
-
+     
 
     
 

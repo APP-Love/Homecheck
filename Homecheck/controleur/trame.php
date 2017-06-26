@@ -10,11 +10,6 @@ for($i=0 ; $i<$size-1; $i++){
 
 list($t, $o, $r, $c, $n, $v, $a, $x, $year, $month, $day, $hour, $min, $sec) =
 sscanf($tram,"%1s%4s%1s%1s%2s%4s%4s%2s%4s%2s%2s%2s%2s%2s");
-echo("
-
-
-$t,$o,$r,$c,$n,$v,$a,$x,$year,$month,$day,$hour,$min,$sec<br
-/>");
 
 
 if ($v == 1111){

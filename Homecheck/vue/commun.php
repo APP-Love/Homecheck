@@ -34,11 +34,7 @@ function entete( $page ){
                             <label for="mdp"> Votre mot de passe : </label>
                             
                             <input type="password" name="mdp" id="mdp" placeholder="Mot de passe..." />
-<<<<<<< HEAD:Homecheck/vue/commun.php
                             <input type="submit" name="valider" value="Se connecter " />
-=======
-                            <input type="submit" name="valider" value="Se connecter" />
->>>>>>> origin/master:Homecheckmvc4/vue/commun.php
                         </form>                  
 
                     </div>
@@ -88,11 +84,7 @@ function entete( $page ){
                             <td class="td2" onclick="location='index.php?cible=contactez'" style="cursor:pointer"> Contactez-nous </td>
                         </tr>
                     </table>
-                        <form class="recherche" method="post" action="retour.php" >
-                            <label for=" Rechercher" ></label> 
-                            <input type="Search" name="Rechercher" id="Rechercher" placeholder="Rechercher..."/>
-                            <input class="bouton" type="image" src="image/recherche.png" title="Rechercher" />
-                        </form>
+                        
 
                 </div>
             </div>

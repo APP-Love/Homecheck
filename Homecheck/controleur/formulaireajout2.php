@@ -48,6 +48,7 @@ $REF = $bdd->query('SELECT * FROM reference');
                               }
 
                           include ("controleur/mailcapteur.php");
+                           include 'vue/capteursParPiece.php';  
 
                     }
                  
@@ -70,6 +71,8 @@ $REF = $bdd->query('SELECT * FROM reference');
                               }
 
                               include ("controleur/mailcapteur.php");
+                               include 'vue/capteursParPiece.php';  
+
                     }
                  
 
@@ -92,11 +95,12 @@ $REF = $bdd->query('SELECT * FROM reference');
                         }
 
                         include ("controleur/mailcapteur.php");
-
+ include 'vue/capteursParPiece.php';  
                     }
-                  
-              
-
+                  else { $erreur="<font color=red size=5> <center> Echec lors de l'ajout de capteur. Vous avez rentré une mauvaise référence </center></font>";
+ include 'vue/ajouterCapteur.php';
+                    }
+               
 
                  
           
@@ -124,7 +128,9 @@ $REF = $bdd->query('SELECT * FROM reference');
                                 $e->getMessage();
                         }
 
-                        //include ("controleur/mailcapteur.php");
+                        include ("controleur/mailcapteur.php");
+                         include 'vue/capteursParPiece.php';  
+
                   }
                  
                  if($_POST['pseudo']=='DEF'){ 
@@ -145,7 +151,8 @@ $REF = $bdd->query('SELECT * FROM reference');
                                 $e->getMessage();
                         }
 
-                        //include ("controleur/mailcapteur.php");
+                        include ("controleur/mailcapteur.php");
+                         include 'vue/capteursParPiece.php';  
 
                   }
                 
@@ -168,8 +175,12 @@ $REF = $bdd->query('SELECT * FROM reference');
                         }
 
                         include ("controleur/mailcapteur.php");
+                         include 'vue/capteursParPiece.php';  
 
                   }
+                  else { $erreur="<font color=red size=5> <center> Echec lors de l'ajout de capteur. Vous avez rentré une mauvaise référence </center></font>";
+ 
+                    }
               
               
 
@@ -201,7 +212,7 @@ $REF = $bdd->query('SELECT * FROM reference');
                                 $e->getMessage();
                         }
 
-                        include ("controleur/mailcapteur.php");
+                        include ("controleur/mailcapteur.php"); include 'vue/capteursParPiece.php';  
 
             }
            
@@ -226,7 +237,7 @@ $REF = $bdd->query('SELECT * FROM reference');
 
 
                         include ("controleur/mailcapteur.php");
-
+ include 'vue/capteursParPiece.php';  
             }
            
 
@@ -249,8 +260,12 @@ $REF = $bdd->query('SELECT * FROM reference');
                         }
 
                         include ("controleur/mailcapteur.php");
-            }
+                         include 'vue/capteursParPiece.php';  
 
+            }
+else { $erreur="<font color=red size=5> <center> Echec lors de l'ajout de capteur. Vous avez rentré une mauvaise référence </center></font>";
+ include 'vue/ajouterCapteur.php';
+                    }
 
 
          
@@ -282,6 +297,7 @@ $REF = $bdd->query('SELECT * FROM reference');
                         }
 
                         include ("controleur/mailcapteur.php");
+                         include 'vue/capteursParPiece.php';  
                 }
               
                 if($_POST['pseudo']== 'LUM2'){ 
@@ -303,6 +319,7 @@ $REF = $bdd->query('SELECT * FROM reference');
                       }
 
                        include ("controleur/mailcapteur.php");
+                        include 'vue/capteursParPiece.php';  
 
                 }
               
@@ -327,9 +344,14 @@ $REF = $bdd->query('SELECT * FROM reference');
                 } 
                 
                  include ("controleur/mailcapteur.php");
-
+ include 'vue/capteursParPiece.php';  
 
                 }
+
+
+                else { $erreur="<font color=red size=5> <center> Echec lors de l'ajout de capteur. Vous avez rentré une mauvaise référence </center></font>";
+ include 'vue/ajouterCapteur.php';
+                    }
               
                
 
@@ -338,10 +360,9 @@ $REF = $bdd->query('SELECT * FROM reference');
 
 
 
-else 
-  { $erreur="<font color=red size=5> <center> Echec lors de l'ajout de capteur. Vous avez rentré une mauvaise référence </center></font>";
- include 'vue/ajouterCapteur.php';
-                    }
+
+
+
               
         include("modele/connexion_bdd.php"); 
 
@@ -351,8 +372,8 @@ else
 
 $_POST['choixpieces']=$_SESSION['choixp'];
 
-    include("vue/capteursParPiece.php");
-         
+    
+      
       
  
 

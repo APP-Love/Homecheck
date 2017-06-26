@@ -16,12 +16,60 @@ require "commun.php";
   <h2> Gestion des administrateurs</h2>
 
      <a href="index.php?cible=logementchoisi"> <img class="croix" src="image/croix2.png" alt="fermeture" /> </a>
-         <?php include 'controleur/ajouteradmin.php'; ?>
+         <?php 
+$sql16='SELECT * FROM utilisateur u  INNER JOIN utilisateur_logement ul ON u.id=ul.id_utilisateur WHERE id_logement="'.$log.'"';
+$reponse16 = $bdd->query($sql16);
+$infoadmin = $reponse16->fetchAll(PDO:: FETCH_ASSOC);;
+
+
+foreach($infoadmin as $elem){
+?>
+
+<div class="boxad" >
+
+<?php 
+  $idboxadmin = $elem['id'];
+  $nomboxadmin = $elem['nom'];
+  $prenomboxadmin= $elem['prenom'];
+  $typeboxadmin = $elem['type'];
+
+
+	echo  $nomboxadmin, $prenomboxadmin, $typeboxadmin; 
+		
+ ?>
+
+
+ <?php echo "<a href='index.php?cible=admincroix&id=".htmlentities($log)."'> <img class='plan' src='image/croix.png' alt='Supprimer admin'/></a>";?>
+
+
+
+ 
+
+
+</div>
+<?php
+        }
+?>
    
    <div id="formulaire">
           <h5> Ajout d'un administrateur : </h5>
 <form action="index.php?cible=formulaireadmin" method="post">
-            <div>
+              
+
+            <div id="Nomblock">
+             <label id="texti" for="Nom">Nom</label> :
+             <input type="text" name="Nom" id="Nom" required>
+             <span id="aideNom"></span>
+            </div>
+
+             
+            <div id="Prenomblock">
+             <label id="texti" for="Prenom">Prenom</label> :
+             <input type="text" name="Prenom" id="Prenom" required>
+             <span id="aideprenom"></span>
+            </div>
+
+            <div id="Identifiantblock">
              <label id="texti" for="Identifiant">Identifiant</label> :
              <input type="text" name="Identifiant" id="Identifiant" required>
              <span id="aideIdentifiant"></span>

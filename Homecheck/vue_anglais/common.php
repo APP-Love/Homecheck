@@ -86,11 +86,7 @@ function entete( $page ){
                             <td class="td2" onclick="location='index2.php?cible=contactez'" style="cursor:pointer"> Contact us</td>
                         </tr>
                     </table>
-                        <form class="recherche" method="post" action="retour.php" >
-                            <label for=" Rechercher" ></label> 
-                            <input type="Search" name="Rechercher" id="Rechercher" placeholder="Search..."/>
-                            <input class="bouton" type="image" src="image/recherche.png" title="Search" />
-                        </form>
+                        
 
                 </div>
             </div>
